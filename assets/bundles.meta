@@ -1,0 +1,20 @@
+{
+  "ver": "1.1.2",
+  "uuid": "a50bf097-e46f-48cd-a207-cc9773700d08",
+  "isBundle": true,
+  "bundleName": "qc",
+  "priority": 1,
+  "compressionType": {
+    "fb-instant-games": "merge_all_json"
+  },
+  "optimizeHotUpdate": {
+    "fb-instant-games": false
+  },
+  "inlineSpriteFrames": {
+    "fb-instant-games": false
+  },
+  "isRemoteBundle": {
+    "fb-instant-games": false
+  },
+  "subMetas": {}
+}
