@@ -1,7 +1,7 @@
 {
   "title": "PushApps",
   "packageName": "org.cocos2d.demo",
-  "startScene": "e01a42e2-f5bf-45ea-b88f-bc9e95c6f82f",
+  "startScene": "c4136a8e-eee7-4a03-ac72-7cde0edadf5c",
   "excludeScenes": [],
   "includeSDKBox": false,
   "orientation": {
@@ -10,7 +10,7 @@
     "portrait": false,
     "upsideDown": false
   },
-  "webOrientation": "portrait",
+  "webOrientation": "auto",
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
   "mainCompressionType": "default",
@@ -19,7 +19,7 @@
   "md5Cache": false,
   "nativeMd5Cache": true,
   "encryptJs": true,
-  "xxteaKey": "ef8e8be8-9586-45",
+  "xxteaKey": "8114169c-7921-40",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
@@ -51,5 +51,8 @@
     "skipRecord": false
   },
   "appBundle": false,
-  "mergeStartScene": true
+  "mergeStartScene": true,
+  "hayhay": {
+    "remoteBundle": true
+  }
 }

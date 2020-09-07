@@ -58,7 +58,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": true,
-    "_id": "e01a42e2-f5bf-45ea-b88f-bc9e95c6f82f"
+    "_id": "c4136a8e-eee7-4a03-ac72-7cde0edadf5c"
   },
   {
     "__type__": "cc.Node",
@@ -78,10 +78,13 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 7
+        "__id__": 8
       },
       {
-        "__id__": 8
+        "__id__": 9
+      },
+      {
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -232,7 +235,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "scenes",
+    "_name": "push-apps",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -242,6 +245,9 @@
     "_components": [
       {
         "__id__": 6
+      },
+      {
+        "__id__": 7
       }
     ],
     "_prefab": null,
@@ -320,6 +326,18 @@
     "_id": "9bKnFxp1tDyJ3YMXFpaliX"
   },
   {
+    "__type__": "b3c29Z0hkJO+YG8o5HD5g94",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 5
+    },
+    "_enabled": true,
+    "url": "https://localhost:8080/assets/qc",
+    "id": "basket",
+    "_id": "c10JJUTBdDl6SEMEiZImuv"
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -362,5 +380,18 @@
     "_originalWidth": 0,
     "_originalHeight": 0,
     "_id": "242yTv4sFLXJU74Q0DAuuh"
+  },
+  {
+    "__type__": "e1bafIOfqBLz6Fi2rKB5poV",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "pushApps": {
+      "__id__": 7
+    },
+    "_id": "985DOwjy9OkZ3NV8Q+Zk96"
   }
 ]

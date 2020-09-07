@@ -1,0 +1,29 @@
+{
+	"version": 0,
+	"id": "1224362211248752",
+	"apps": {
+		"default": {
+			"basket": 100
+		},
+		"vi": {
+			"basket": 50,
+			"jumping-girl": 50
+		},
+		"th": {
+			"basket": 90,
+			"jumping-girl": 10
+		}
+	},
+	"configs": {
+		"default": {
+			"view-adjust": 0.1,
+			"click-adjust": 0.5,
+			"daily-index": [2, 7, 12, 16, 20]
+		}
+	},
+	"rules": {
+		"vi": { "locale": "vi" },
+		"th": { "locale": "th" },
+		"test": { "user": ["124567890"], "set": "default" }
+	}
+}
