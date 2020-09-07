@@ -43,7 +43,6 @@ var Manager = cc.Class({
 		return new Promise((resolve, reject) => {
 			var node = cc.instantiate(prefab);
 			UI.add(node, this.node);
-			console.log("inter", UI.size(node), node.position);
 			UI.on(node, "click", () => {
 				this.configs.clickInter();
 			});

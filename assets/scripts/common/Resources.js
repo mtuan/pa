@@ -72,10 +72,8 @@ module.exports = {
     	return new Promise((resolve, reject) => {
     		downloadAjax(url, (err, data) => {
     			if (err) {
-    				console.log("loadAjaxAsync ng", url, err);
     				reject(err);
     			} else {
-    				console.log("loadAjaxAsync ok", url);
     				resolve(data);
     			}
     		});
@@ -125,7 +123,6 @@ module.exports = {
 		r.init(configs);
 		r.loadAsync = function(...args) {
 			return new Promise((resolve, reject) => {
-				console.log("bundle load", ...args);
 				this.load(...args, (err, data) => {
 					if (err) {
 						reject(err);

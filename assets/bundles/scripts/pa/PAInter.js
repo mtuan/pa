@@ -11,7 +11,7 @@ cc.Class({
 		var size = UI.size(this.node);
 		var sx = parentSize.width / size.width;
 		var sy = parentSize.height / size.height;
-		UI.scaleY(this.node, sy);
+		UI.scale(this.node, sy);
 		UI.scale(this.bg, Math.max(sx, sy) / sy);
 	},
 	onPlay() {

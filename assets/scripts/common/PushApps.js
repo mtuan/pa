@@ -15,7 +15,6 @@ cc.Class({
 		var prefab = await this.bundle.loadAsync("prefabs/pa-manager", cc.Prefab);
 		var node = cc.instantiate(prefab);
 		UI.add(node, this.node);
-		console.log("manager", UI.size(node), node.position);
 		return UI.component(node, "PAManager");
 	},
 	async loadInterAsync() {
