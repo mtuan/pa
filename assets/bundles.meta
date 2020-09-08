@@ -5,16 +5,20 @@
   "bundleName": "qc",
   "priority": 1,
   "compressionType": {
-    "fb-instant-games": "merge_all_json"
+    "fb-instant-games": "merge_all_json",
+    "web-mobile": "none"
   },
   "optimizeHotUpdate": {
-    "fb-instant-games": false
+    "fb-instant-games": false,
+    "web-mobile": false
   },
   "inlineSpriteFrames": {
-    "fb-instant-games": false
+    "fb-instant-games": false,
+    "web-mobile": false
   },
   "isRemoteBundle": {
-    "fb-instant-games": false
+    "fb-instant-games": false,
+    "web-mobile": false
   },
   "subMetas": {}
 }

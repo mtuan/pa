@@ -8,6 +8,11 @@ module.exports = {
 	now() {
 		return new Date().getTime() / 1000;
 	},
+	today() {
+		var r = new Date();
+		r.setHours(0,0,0,0);
+		return r.getTime() / 1000;
+	},
 	// type conversions
 	string(value) {
 		return "" + value;

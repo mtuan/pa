@@ -11,11 +11,34 @@ cc.Class({
 			this.saveLocal();
 		}
 	},
+	reset() {
+		Settings.remove("pa-count");
+		Settings.remove("pa-date");
+		Settings.remove("pa-data");
+	},
 	getSrcId() {
 		return this.local.id;
 	},
 	loadInter() {
 		return this.loadedInterId = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
+	},
+	updateInterCount() {
+		var date = Settings.getNum("pa-date");
+		var today = JS.today();
+		if (date != today) {
+			Settings.set("pa-count", 0);
+			Settings.set("pa-date", today);
+		}
+		return Settings.inc("pa-count");
+	},
+	getCount() {
+		return Settings.getNum("pa-count");
+	},
+	isInterTurn() {
+		var count = Settings.getNum("pa-count");
+		var turns = this.local.configs["inter-index"];
+		console.log("isInterTurn", count, turns);
+		return turns && turns.includes(count);
 	},
 	showInter() {
 		if (this.loadedInterId) {
@@ -43,10 +66,10 @@ cc.Class({
 			}
 		}
 		// save settings
-		Settings.set("pa-apps", this.local);
+		Settings.set("pa-data", this.local);
 	},
 	_loadLocal() {
-		return Settings.getJson("pa-apps");
+		return Settings.getJson("pa-data");
 	},
 	_getRemote(d) {
 		var set = this._getSet(d);

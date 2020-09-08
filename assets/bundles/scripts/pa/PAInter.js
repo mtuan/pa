@@ -16,8 +16,14 @@ cc.Class({
 	},
 	onPlay() {
 		UI.emit(this.node, "click");
-		FBInstant.switchGameAsync(this.id, { src: Manager.active.getSrcId() }).then(() => {
+		var d = {
+			"src-game": Manager.active.getSrcId()
+		};
+		FBInstant.switchGameAsync(this.id, d).then(() => {
 			UI.emit(this.node, "close");
+			UI.remove(this.node);
+		}, () => {
+			UI.emit(this.node, "close", true);
 			UI.remove(this.node);
 		});
 	}

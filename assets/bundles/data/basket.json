@@ -18,7 +18,7 @@
 		"default": {
 			"view-adjust": 0.1,
 			"click-adjust": 0.5,
-			"daily-index": [2, 7, 12, 16, 20]
+			"inter-index": [2, 7, 12, 16, 20]
 		}
 	},
 	"rules": {

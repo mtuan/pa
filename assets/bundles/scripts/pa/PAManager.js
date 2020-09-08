@@ -11,6 +11,11 @@ var Manager = cc.Class({
 	getSrcId() {
 		return this.configs ? this.configs.getSrcId() : "";
 	},
+	reset() {
+		if (this.configs) {
+			this.configs.reset();	
+		}
+	},
 	initAsync(bundle, id) {
 		this.bundle = bundle;
 		this.id = id;
@@ -31,28 +36,46 @@ var Manager = cc.Class({
 			return this.prefabs[id] = prefab;
 		});
 	},
-	showInterAsync() {
+	checkInter() {
+		if (!this.configs.isInterTurn()) {
+			return { reason: "INTER_NOT_IN_TURN" };
+		}
 		if (!this.configs.loadedInterId) {
-			return Promise.reject({ reason: "APP_NOT_LOADED" });
+			return { reason: "INTER_NOT_LOADED" };
 		}
 		var prefab = this.prefabs[this.configs.loadedInterId];
 		if (!prefab) {
-			return Promise.reject({ reason: "APP_NOT_LOADED" });
+			return { reason: "INTER_NOT_LOADED" };
 		}
+	},
+	showInterAsync() {
+		this.configs.updateInterCount();
+		var r = this.checkInter();
+		if (r) {
+			return Promise.reject(r);
+		}
+		var prefab = this.prefabs[this.configs.loadedInterId];
 		this.configs.showInter();
+		FBInstant.logEvent("PUSH_APP_SHOW", 0, {
+			id: this.configs.loadedInterId,
+			count: this.configs.getCount()
+		});
 		return new Promise((resolve, reject) => {
 			var node = cc.instantiate(prefab);
 			UI.add(node, this.node);
 			UI.on(node, "click", () => {
 				this.configs.clickInter();
+				FBInstant.logEvent("PUSH_APP_CLICK", 0, {
+					id: this.configs.loadedInterId
+				});
 			});
 			UI.on(node, "close", (canceled) => {
 				if (canceled) {
-					reject({ reason: "USER_CANCELED" });
-				} else {
-					resolve();
+					FBInstant.logEvent("PUSH_APP_CANCEL", 0, {
+						id: this.configs.loadedInterId
+					});
 				}
-				this.loadInterAsync();
+				resolve();
 			});
 		});
 	}
