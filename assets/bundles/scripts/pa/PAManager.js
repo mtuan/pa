@@ -21,8 +21,10 @@ var Manager = cc.Class({
 		this.id = id;
 		this.url = configUrl;
 		return Resources.loadJsonAsync(this.url).then(d => {
-			this.configs = new Configs(d);
-			this.loadInterAsync();
+			if (!d.disabled) {
+				this.configs = new Configs(d);
+				this.loadInterAsync();
+			}
 		});
 	},
 	loadInterAsync() {
@@ -67,7 +69,10 @@ var Manager = cc.Class({
 		}
 		var instance = this.interInstance;
 		var interId = instance.id;
+		// reload
 		this.interInstance = null;
+		this.loadInterAsync();
+		// show
 		this.configs.showInter(interId);
 		FBInstant.logEvent("PA_INTER_SHOW", 0, {
 			id: interId,
