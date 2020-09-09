@@ -6,7 +6,7 @@ cc.Class({
 		url: "",
 		id: ""
 	},
-	async onLoad() {
+	async loadAsync() {
 		this.bundle = await Resources.loadBundleAsync(this.url);
 		this.manager = await this.loadManagerAsync();
 		await this.manager.initAsync(this.bundle, this.id);

@@ -23,7 +23,6 @@ var Manager = cc.Class({
 		return Resources.loadJsonAsync(this.url).then(d => {
 			if (!d.disabled) {
 				this.configs = new Configs(d);
-				this.loadInterAsync();
 			}
 		});
 	},
