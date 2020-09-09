@@ -10,7 +10,8 @@ cc.Class({
 		this.remote = this._getRemote(d);
 		this.local = this._loadLocal();
 		if (!this.local || this.local.version != this.remote.version) {
-			this.reset();
+			this.resetCount();
+			this.resetRates();
 			this.local = this.remote;
 			this.saveLocal();
 		}
