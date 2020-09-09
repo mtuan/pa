@@ -15,9 +15,11 @@ cc.Class({
 			this.saveLocal();
 		}
 	},
-	reset() {
+	resetCount() {
 		Settings.remove("pa-inter-count");
 		Settings.remove("pa-inter-date");
+	},
+	resetRates() {
 		Settings.remove("pa-data");
 	},
 	getSrcId() {

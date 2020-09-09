@@ -11,9 +11,14 @@ var Manager = cc.Class({
 	getSrcId() {
 		return this.configs ? this.configs.getSrcId() : "";
 	},
-	reset() {
+	resetCount() {
 		if (this.configs) {
-			this.configs.reset();	
+			this.configs.resetCount();	
+		}
+	},
+	resetRates() {
+		if (this.configs) {
+			this.configs.resetRates();	
 		}
 	},
 	initAsync(bundle, id, configUrl) {
