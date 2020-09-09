@@ -1,5 +1,5 @@
 {
-  "version": 0,
+  "version": 1,
   "id": "1224362211248752",
   "orientation": "portrait",
   "templates": {
@@ -99,7 +99,7 @@
       "ninja-hit": 5,
       "basket-hit": 20,
       "pair-matching": 20,
-      "draw-battle": 10
+      "draw-battle": 20
     }
   },
   "configs": {

@@ -3,12 +3,8 @@ var UI = require("UI");
 cc.Class({
 	extends: cc.Component,
 	properties: {
-		id: "",
 		bg: cc.Sprite,
 		play: cc.Sprite,
-	},
-	onLoad() {
-		this.updateLayout();
 	},
 	showAsync(onClick, onClose) {
 		return new Promise((resolve, reject) => {
@@ -22,11 +18,11 @@ cc.Class({
 	},
 	setDataAsync(d) {
 		this.data = d;
-		this.id = d.id;
-		var p1 = UI.spriteAsync(this.bg, d.screenshot);
-		var p2 = UI.spriteAsync(this.play, d.button.image);
-		return Promise.all([p1, p2]).then(() => {
+		var p1 = d.screenshot ? UI.spriteAsync(this.bg, d.screenshot) : Promise.resolve();
+		var p2 = d.button ? UI.spriteAsync(this.play, d.button.image).then(() => {
 			UI.pos(this.play.node, cc.v2(d.button.x, d.button.y));
+		}) : Promise.resolve();
+		return Promise.all([p1, p2]).then(() => {
 			this.updateLayout();
 		});
 	},
@@ -35,7 +31,7 @@ cc.Class({
 		var size = UI.size(this.bg.node);
 		var sx = winSize.width / size.width;
 		var sy = winSize.height / size.height;
-		UI.size(this.node, size);
+		UI.size(this.node, cc.size(winSize.width / sy, size.height));
 		UI.scale(this.node, sy);
 		UI.scale(this.bg.node, Math.max(sx, sy) / sy);
 	},
@@ -47,7 +43,7 @@ cc.Class({
 		var d = {
 			"src-game": Manager.active.getSrcId()
 		};
-		FBInstant.switchGameAsync(this.id, d).then(() => {
+		FBInstant.switchGameAsync(this.data.id, d).then(() => {
 			UI.emit(this.node, "close");
 		}, (e) => {
 			UI.emit(this.node, "close", true);

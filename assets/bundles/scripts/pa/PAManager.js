@@ -39,6 +39,7 @@ var Manager = cc.Class({
 		this.interLoading = true;
 		return this.loadInterPrefabAsync(next.type).then((prefab) => {
 			var r = UI.create(prefab, "PAInter");
+			r.id = next.id;
 			if (next.data) {
 				return r.setDataAsync(next.data).then(() => this.interInstance = r);
 			} else {
@@ -57,19 +58,20 @@ var Manager = cc.Class({
 	},
 	showInterAsync() {
 		this.configs.updateInterCount();
-		if (!this.configs.isInterTurn()) {
-			return Promise.reject({ reason: "PA_INTER_NOT_IN_TURN" });
+		var r = this.configs.checkInterTurn();
+		if (!r.isTurn) {
+			return Promise.reject({ reason: "PA_INTER_NOT_IN_TURN", count: r.count, turns: r.turns });
 		}
 		if (!this.interInstance) {
 			return Promise.reject({ reason: "PA_INTER_NOT_LOADED" });
 		}
 		var instance = this.interInstance;
-		var interId = instance.data.id;
+		var interId = instance.id;
 		this.interInstance = null;
 		this.configs.showInter(interId);
 		FBInstant.logEvent("PA_INTER_SHOW", 0, {
 			id: interId,
-			count: this.configs.getCount()
+			count: this.configs.getInterCount()
 		});
 		UI.add(instance.node, this.node);
 		return instance.showAsync(() => {

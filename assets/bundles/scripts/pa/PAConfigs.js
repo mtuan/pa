@@ -3,17 +3,21 @@ var Settings = require("Settings");
 
 cc.Class({
 	ctor(d) {
+		this.setData(d);
+	},
+	setData(d) {
 		this.data = d;
 		this.remote = this._getRemote(d);
 		this.local = this._loadLocal();
 		if (!this.local || this.local.version != this.remote.version) {
+			this.reset();
 			this.local = this.remote;
 			this.saveLocal();
 		}
 	},
 	reset() {
-		Settings.remove("pa-count");
-		Settings.remove("pa-date");
+		Settings.remove("pa-inter-count");
+		Settings.remove("pa-inter-date");
 		Settings.remove("pa-data");
 	},
 	getSrcId() {
@@ -24,43 +28,54 @@ cc.Class({
 		if (!id) {
 			return;
 		}
-		var orientation = this.local.orientation == "landscape" ? "-landscape" : "";
-		var template = this.local.templates[id];
+		var data = this.local.templates[id];
+		if (!data) {
+			return;
+		}
 		return {
 			id: id,
-			type: template ? "template" : id + orientation,
-			data: template ? template : undefined
+			type: data.template || "template",
+			data: data
 		};
 	},
 	updateInterCount() {
-		var date = Settings.getNum("pa-date");
+		var date = Settings.getNum("pa-inter-date");
 		var today = JS.today();
 		if (date != today) {
-			Settings.set("pa-count", 0);
-			Settings.set("pa-date", today);
+			Settings.set("pa-inter-count", 0);
+			Settings.set("pa-inter-date", today);
 		}
-		return Settings.inc("pa-count");
+		return Settings.inc("pa-inter-count");
 	},
-	getCount() {
-		return Settings.getNum("pa-count");
+	getInterCount() {
+		return Settings.getNum("pa-inter-count");
 	},
-	isInterTurn() {
-		var count = Settings.getNum("pa-count");
+	checkInterTurn() {
+		var count = Settings.getNum("pa-inter-count");
 		var turns = this.local.configs["inter-index"];
-		console.log("isInterTurn", count, turns);
-		return turns && turns.includes(count);
+		return {
+			count: count,
+			turns: turns,
+			isTurn: turns && turns.includes(count)
+		};
+	},
+	updateAppRate(id, adjust) {
+		if (id) {
+			this.local.apps[id] *= 1 - adjust;
+			this.saveLocal();
+		}
+	},
+	showIcon(id) {
+		this.updateAppRate(id, this.local.configs["icon-show"] || 0.01);
+	},
+	clickIcon(id) {
+		this.updateAppRate(id, this.local.configs["icon-click"] || 0.5);
 	},
 	showInter(id) {
-		if (id) {
-			this.local.apps[id] *= this.local.configs["view-adjust"] || 0.1;
-			this.saveLocal();
-		}
+		this.updateAppRate(id, this.local.configs["inter-show"] || 0.1);
 	},
 	clickInter(id) {
-		if (id) {
-			this.local.apps[id] *= this.local.configs["click-adjust"] || 0.5;
-			this.saveLocal();
-		}
+		this.updateAppRate(id, this.local.configs["inter-click"] || 0.5);
 	},
 	saveLocal() {
 		// ensure that values are not too small
