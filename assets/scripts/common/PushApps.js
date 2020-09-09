@@ -13,9 +13,9 @@ cc.Class({
 	},
 	async loadManagerAsync() {
 		var prefab = await this.bundle.loadAsync("prefabs/pa-manager", cc.Prefab);
-		var node = cc.instantiate(prefab);
-		UI.add(node, this.node);
-		return UI.component(node, "PAManager");
+		var r = UI.create(prefab, "PAManager");
+		UI.add(r.node, this.node);
+		return r;
 	},
 	async loadInterAsync() {
 		if (!this.manager || !this.manager.configs) {

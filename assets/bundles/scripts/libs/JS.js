@@ -114,6 +114,6 @@ module.exports = {
     			return i;
     		}
     	}
-    	return -1;
+    	return chances.length - 1;
     }	
 };

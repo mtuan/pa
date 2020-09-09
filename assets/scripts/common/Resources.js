@@ -67,6 +67,18 @@ function downloadAjax(url, options, onProgress, onComplete) {
 }
 
 module.exports = {
+	// load remote resources
+	loadAsync(...args) {
+		return new Promise((resolve, reject) => {
+			cc.loader.load(...args, (errors, result) => {
+				if (errors) {
+					reject(errors);
+				} else {
+					resolve(result);
+				}
+			});
+		});
+    },
     // load ajax
     loadAjaxAsync(url) {
     	return new Promise((resolve, reject) => {
@@ -135,6 +147,6 @@ module.exports = {
 		return r.loadAsync("images/externals").then((d) => {
 			r._config.externals = d.json;
 			return r;
-		});
+		}).catch(() => r);
 	}
 };

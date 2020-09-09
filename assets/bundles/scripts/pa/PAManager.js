@@ -16,67 +16,73 @@ var Manager = cc.Class({
 			this.configs.reset();	
 		}
 	},
-	initAsync(bundle, id) {
+	initAsync(bundle, id, configUrl) {
 		this.bundle = bundle;
 		this.id = id;
-		return this.bundle.loadAsync(JS.format("data/%s", id)).then(d => {
-			this.configs = new Configs(d.json);
+		this.url = configUrl;
+		return Resources.loadJsonAsync(this.url).then(d => {
+			this.configs = new Configs(d);
 			this.loadInterAsync();
 		});
 	},
 	loadInterAsync() {
-		var id = this.configs.loadInter();
-		if (!id) {
-			return Promise.reject({ reason: "INTER_NOT_AVAILABLE", id: id });
+		if (this.interInstance) {
+			return Promise.resolve(this.interInstance);
 		}
+		if (this.interLoading) {
+			return Promise.reject({ reason: "PA_INTER_LOADING" })
+		}
+		var next = this.configs.loadInter();
+		if (!next) {
+			return Promise.reject({ reason: "PA_INTER_NOT_AVAILABLE" });
+		}
+		this.interLoading = true;
+		return this.loadInterPrefabAsync(next.type).then((prefab) => {
+			var r = UI.create(prefab, "PAInter");
+			if (next.data) {
+				return r.setDataAsync(next.data).then(() => this.interInstance = r);
+			} else {
+				return Promise.resolve(this.interInstance = r);
+			}
+		}).finally(() => this.interLoading = false);
+	},
+	loadInterPrefabAsync(id) {
 		if (this.prefabs[id]) {
 			return Promise.resolve(this.prefabs[id]);
 		}
-		return this.bundle.loadAsync(JS.format("apps/%s", id), cc.Prefab).then((prefab) => {
-			return this.prefabs[id] = prefab;
-		});
-	},
-	checkInter() {
-		if (!this.configs.isInterTurn()) {
-			return { reason: "INTER_NOT_IN_TURN" };
-		}
-		if (!this.configs.loadedInterId) {
-			return { reason: "INTER_NOT_LOADED" };
-		}
-		var prefab = this.prefabs[this.configs.loadedInterId];
-		if (!prefab) {
-			return { reason: "INTER_NOT_LOADED" };
-		}
+		return this.bundle.loadAsync(JS.format("apps/%s", id), cc.Prefab)
+			.then((prefab) => {
+				return this.prefabs[id] = prefab;
+			});
 	},
 	showInterAsync() {
 		this.configs.updateInterCount();
-		var r = this.checkInter();
-		if (r) {
-			return Promise.reject(r);
+		if (!this.configs.isInterTurn()) {
+			return Promise.reject({ reason: "PA_INTER_NOT_IN_TURN" });
 		}
-		var prefab = this.prefabs[this.configs.loadedInterId];
-		this.configs.showInter();
-		FBInstant.logEvent("PUSH_APP_SHOW", 0, {
-			id: this.configs.loadedInterId,
+		if (!this.interInstance) {
+			return Promise.reject({ reason: "PA_INTER_NOT_LOADED" });
+		}
+		var instance = this.interInstance;
+		var interId = instance.data.id;
+		this.interInstance = null;
+		this.configs.showInter(interId);
+		FBInstant.logEvent("PA_INTER_SHOW", 0, {
+			id: interId,
 			count: this.configs.getCount()
 		});
-		return new Promise((resolve, reject) => {
-			var node = cc.instantiate(prefab);
-			UI.add(node, this.node);
-			UI.on(node, "click", () => {
-				this.configs.clickInter();
-				FBInstant.logEvent("PUSH_APP_CLICK", 0, {
-					id: this.configs.loadedInterId
+		UI.add(instance.node, this.node);
+		return instance.showAsync(() => {
+			this.configs.clickInter(interId);
+			FBInstant.logEvent("PA_INTER_CLICK", 0, {
+				id: interId
+			});
+		}, (canceled) => {
+			if (canceled) {
+				FBInstant.logEvent("PA_INTER_CANCEL", 0, {
+					id: interId
 				});
-			});
-			UI.on(node, "close", (canceled) => {
-				if (canceled) {
-					FBInstant.logEvent("PUSH_APP_CANCEL", 0, {
-						id: this.configs.loadedInterId
-					});
-				}
-				resolve();
-			});
+			}
 		});
 	}
 });

@@ -20,7 +20,17 @@ cc.Class({
 		return this.local.id;
 	},
 	loadInter() {
-		return this.loadedInterId = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
+		var id = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
+		if (!id) {
+			return;
+		}
+		var orientation = this.local.orientation == "landscape" ? "-landscape" : "";
+		var template = this.local.templates[id];
+		return {
+			id: id,
+			type: template ? "template" : id + orientation,
+			data: template ? template : undefined
+		};
 	},
 	updateInterCount() {
 		var date = Settings.getNum("pa-date");
@@ -40,15 +50,15 @@ cc.Class({
 		console.log("isInterTurn", count, turns);
 		return turns && turns.includes(count);
 	},
-	showInter() {
-		if (this.loadedInterId) {
-			this.local.apps[this._nextInter] *= this.local.configs["view-adjust"] || 0.1;
+	showInter(id) {
+		if (id) {
+			this.local.apps[id] *= this.local.configs["view-adjust"] || 0.1;
 			this.saveLocal();
 		}
 	},
-	clickInter() {
-		if (this.loadedInterId) {
-			this.local.apps[this._nextInter] *= this.local.configs["click-adjust"] || 0.5;
+	clickInter(id) {
+		if (id) {
+			this.local.apps[id] *= this.local.configs["click-adjust"] || 0.5;
 			this.saveLocal();
 		}
 	},
@@ -56,7 +66,7 @@ cc.Class({
 		// ensure that values are not too small
 		var min = Number.MAX_SAFE_INTEGER;
 		JS.each(this.local.apps, (key, value) => {
-			if (min > value) {
+			if (value > 0 && min > value) {
 				min = value;
 			}
 		});
@@ -76,7 +86,9 @@ cc.Class({
 		return {
 			version: d.version,
 			id: d.id,
-			apps: d.apps[set] || d.apps["default"],
+			orientation: d.orientation,
+			templates: d.templates,
+			apps: d.sets[set] || d.sets["default"],
 			configs: d.configs[set] || d.configs["default"]
 		};
 	},
