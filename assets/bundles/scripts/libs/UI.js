@@ -1,4 +1,5 @@
 var JS = require("JS");
+var Resources = require("Resources");
 module.exports = {
 	// instantiate
 	create(prefab, script) {
@@ -56,9 +57,9 @@ module.exports = {
 	},
 	scale(node, value) {
 		if (!JS.isDefined(value)) {
-			return node.getScale();
+			return node.scale;
 		} else {
-			node.setScale(value);
+			node.scale = value;
 		}
 	},
 	scaleX(node, value) {
@@ -77,16 +78,16 @@ module.exports = {
 	},
 	// sprite
 	sprite(target, value, callback) {
-		if (isString(value)) {
+		if (JS.isString(value)) {
 			Resources.loadAsync(value).then((d) => {
 				target.spriteFrame = new cc.SpriteFrame(d);
-				raise(callback);
+				callback && callback();
 			});
-		} else if (isType(value, cc.SpriteFrame)) {
+		} else if (JS.isType(value, cc.SpriteFrame)) {
 			target.spriteFrame = value;
-			raise(callback);
+			callback && callback();
 		} else {
-			raise(callback);
+			callback && callback();
 		}      
 	},
 	spriteAsync(target, value) {

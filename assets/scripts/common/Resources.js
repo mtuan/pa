@@ -79,6 +79,17 @@ module.exports = {
 			});
 		});
     },
+    loadResAsync(...args) {
+		return new Promise((resolve, reject) => {
+			cc.loader.loadRes(...args, (errors, result) => {
+				if (errors) {
+					reject(errors);
+				} else {
+					resolve(result);
+				}
+			});
+		});
+    },
     // load ajax
     loadAjaxAsync(url) {
     	return new Promise((resolve, reject) => {

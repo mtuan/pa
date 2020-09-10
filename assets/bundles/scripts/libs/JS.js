@@ -104,6 +104,9 @@ module.exports = {
     	}
     	return keys[this.rndChance(chances)];
     },
+    rndValue(obj) {
+    	return obj[this.rndKey(obj)];
+    },
     rndChance(chances) {
     	var total = this.sum(chances);
     	var value = this.rnd(total);

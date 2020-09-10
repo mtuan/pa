@@ -104,7 +104,6 @@ cc.Class({
 		return {
 			version: d.version,
 			id: d.id,
-			orientation: d.orientation,
 			templates: d.templates,
 			apps: d.sets[set] || d.sets["default"],
 			configs: d.configs[set] || d.configs["default"]

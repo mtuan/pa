@@ -3,6 +3,7 @@ var UI = require("UI");
 cc.Class({
 	extends: cc.Component,
 	properties: {
+		content: cc.Node,
 		bg: cc.Sprite,
 		play: cc.Sprite,
 	},
@@ -31,9 +32,13 @@ cc.Class({
 		var size = UI.size(this.bg.node);
 		var sx = winSize.width / size.width;
 		var sy = winSize.height / size.height;
-		UI.size(this.node, cc.size(winSize.width / sy, size.height));
-		UI.scale(this.node, sy);
-		UI.scale(this.bg.node, Math.max(sx, sy) / sy);
+		var ratio = winSize.width / winSize.height;
+		var scale = Math.min(sx, sy);
+		
+		var width = size.height * ratio;
+		UI.size(this.content, cc.size(width, size.height));
+		UI.scale(this.content, sy);
+		UI.scale(this.bg.node, cc.v2(Math.max(width / size.width, 1), 1));
 	},
 	onClose() {
 		UI.emit(this.node, "close");
