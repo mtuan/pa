@@ -21,11 +21,11 @@ var Manager = cc.Class({
 			this.configs.resetRates();	
 		}
 	},
-	initAsync(bundle, id, configUrl) {
+	setBundle(bundle) {
 		this.bundle = bundle;
-		this.id = id;
-		this.url = configUrl;
-		return Resources.loadJsonAsync(this.url).then(d => {
+	},
+	loadConfigsAsync(url) {
+		return Resources.loadJsonAsync(url).then(d => {
 			if (!d.disabled) {
 				this.configs = new Configs(d);
 			}
