@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "app",
+    "_name": "preview",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -505,15 +505,15 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        320.125,
-        612.75,
+        298.5,
+        591,
         0,
         0,
         0,
         0,
         1,
-        0.75,
-        0.75,
+        1,
+        1,
         0
       ]
     },
@@ -574,8 +574,8 @@
     "_target": null,
     "_alignFlags": 33,
     "_left": 0,
-    "_right": 20,
-    "_top": 20,
+    "_right": 30,
+    "_top": 30,
     "_bottom": 0,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
