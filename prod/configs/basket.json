@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "id": "1224362211248752",
   "templates": {
   	"basket-hit": {
@@ -102,24 +102,31 @@
       }
     }
   },
-  "sets": {
-    "default": {
-      "shoot-bubbles": 40,
-      "jumping-girl": 5,
-      "connect-animals": 0,
-      "candy-kingdom": 0,
-      "color-link": 5,
-      "ninja-hit": 5,
-      "basket-hit": 20,
-      "pair-matching": 20,
-      "draw-battle": 10
-    }
-  },
   "configs": {
     "default": {
       "inter-show": 0.1,
       "inter-click": 0.5,
       "inter-index": [2, 7, 12, 16, 20]
+    }
+  },
+  "sets": {
+    "default": {
+    },
+    "test": {
+      "shoot-bubbles": 10,
+      "jumping-girl": 10,
+      "connect-animals": 10,
+      "candy-kingdom": 10,
+      "color-link": 10,
+      "ninja-hit": 10,
+      "basket-hit": 10,
+      "pair-matching": 10,
+      "draw-battle": 10
+    }
+  },
+  "rules": {
+    "test": {
+      "user": ["3727884593892630", "2988101194627217"]
     }
   }
 }

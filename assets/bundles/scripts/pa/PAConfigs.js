@@ -133,6 +133,7 @@ cc.Class({
 		switch (key) {
 		case "locale": return FBInstant.getLocale();
 		case "lang": return FBInstant.getLocale().split("_").first();
+		case "country": return FBInstant.getLocale().split("_").last();
 		case "user": return FBInstant.player.getID();
 		}
 	}

@@ -1,6 +1,6 @@
 {
   "basket-hit": {
-    "controller": "controllers/v0",
+    "controller": "controllers/v1",
     "config": "configs/basket.json"
   }
 }
