@@ -53,6 +53,24 @@ var Manager = cc.Class({
 			}
 		}).finally(() => this.interLoading = false);
 	},
+	testInterAsync(id) {
+		var next = this.configs.getInter(id);
+		if (!next) {
+			return Promise.reject({ reason: "PA_INVALID_INTER", id: id });
+		}
+		return this.loadInterPrefabAsync(next.type).then((prefab) => {
+			var r = UI.create(prefab, "PAInter");
+			r.id = next.id;
+			if (next.data) {
+				return r.setDataAsync(next.data).then(() => r);
+			} else {
+				return Promise.resolve(r);
+			}
+		}).then((r) => {
+			UI.add(r.node, this.node);
+			return r.showAsync();
+		});
+	},
 	loadInterPrefabAsync(id) {
 		if (this.prefabs[id]) {
 			return Promise.resolve(this.prefabs[id]);

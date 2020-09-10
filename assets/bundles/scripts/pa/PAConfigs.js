@@ -26,11 +26,7 @@ cc.Class({
 	getSrcId() {
 		return this.local.id;
 	},
-	loadInter() {
-		var id = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
-		if (!id) {
-			return;
-		}
+	getInter(id) {
 		var data = this.local.templates[id];
 		if (!data) {
 			return;
@@ -40,6 +36,13 @@ cc.Class({
 			type: data.template || "template",
 			data: data
 		};
+	},
+	loadInter() {
+		var id = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
+		if (!id) {
+			return;
+		}
+		return this.getInter(id);
 	},
 	updateInterCount() {
 		var date = Settings.getNum("pa-inter-date");
