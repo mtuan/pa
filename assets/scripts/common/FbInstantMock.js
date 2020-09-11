@@ -1,4 +1,4 @@
-var JS = require("JS");
+var JS = require("PAJS");
 var FbAdInstance = require("FbAdMockInstance");
 
 var INTER = 1;

@@ -1,5 +1,5 @@
-var JS = require("JS");
-var Settings = require("Settings");
+var JS = require("PAJS");
+var Settings = require("PASettings");
 
 var INTER = 1;
 var VIDEO = 2;

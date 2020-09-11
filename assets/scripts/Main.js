@@ -1,5 +1,5 @@
-var Resources = require("Resources");
-var JS = require("JS");
+var Resources = require("PAResources");
+var JS = require("PAJS");
 cc.Class({
 	extends: cc.Component,
 	properties: {

@@ -1,5 +1,5 @@
 var Manager = require("PAManager");
-var UI = require("UI");
+var UI = require("PAUI");
 cc.Class({
 	extends: cc.Component,
 	properties: {

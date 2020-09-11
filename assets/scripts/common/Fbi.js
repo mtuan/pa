@@ -1,4 +1,4 @@
-var Settings = require("Settings");
+var Settings = require("PASettings");
 // extend FBInstant methods
 var fbi = window.FBInstant || require("FbInstantMock");
 fbi.supports = function(method) {

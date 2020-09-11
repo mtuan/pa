@@ -1,5 +1,5 @@
-var Resources = require("Resources");
-var UI = require("UI");
+var Resources = require("PAResources");
+var UI = require("PAUI");
 cc.Class({
 	extends: cc.Component,
 	properties: {

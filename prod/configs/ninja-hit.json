@@ -1,0 +1,118 @@
+{
+  "version": 0,
+  "id": "634974810429385",
+  "templates": {
+  	"basket-hit": {
+  		"id": "1224362211248752",
+        "name": "Basket Hit",
+        "icon": "https://i.imgur.com/BiB1taV.png",
+        "screenshot": "https://i.imgur.com/MDGxAx7.jpg",
+        "button": {
+          "image": "https://i.imgur.com/PJRgOHA.png",
+          "x": 0,
+          "y": -320
+        }
+  	},
+  	"jumping-girl": {
+  		"id": "347909499499999",
+        "name": "Jumping Girl",
+        "icon": "https://i.imgur.com/dPfRbzi.png",
+        "screenshot": "https://i.imgur.com/sY1Ri8n.jpg",
+        "button": {
+          "image": "https://i.imgur.com/O1PdIpX.png",
+          "x": 0,
+          "y": -250
+        }
+  	},
+    "shoot-bubbles": {
+      "id": "227788504726017",
+      "name": "Shoot Bubbles",
+      "icon": "https://i.imgur.com/cmA3MUO.png",
+      "screenshot": "https://i.imgur.com/6XQiVCi.jpg",
+      "button": {
+        "image": "https://i.imgur.com/4RLkhSq.png",
+        "x": 0,
+        "y": -360
+      }
+    },
+    "connect-animals": {
+      "id": "1043181865796678",
+      "name": "Connect Animals",
+      "icon": "https://i.imgur.com/JClSMev.png",
+      "screenshot": "https://i.imgur.com/Lo31gPP.jpg",
+      "button": {
+        "image": "https://i.imgur.com/8KrftHc.png",
+        "x": 0,
+        "y": -320
+      }
+    },
+    "candy-kingdom": {
+      "id": "3280083422063465",
+      "name": "Candy Kingdom",
+      "icon": "https://i.imgur.com/YbxKz77.png",
+      "screenshot": "https://i.imgur.com/MRopjrx.jpg",
+      "button": {
+        "image": "https://i.imgur.com/7cIPKnk.png",
+        "x": 0,
+        "y": -520
+      }
+    },
+    "color-link": {
+      "id": "529117187574163",
+      "name": "Color Link",
+      "icon": "https://i.imgur.com/Wek57Ep.png",
+      "screenshot": "https://i.imgur.com/JdyLwSU.png",
+      "button": {
+        "image": "https://i.imgur.com/8KrftHc.png",
+        "x": 0,
+        "y": -200
+      }
+    },
+    "ninja-hit": {
+      "id": "634974810429385",
+      "name": "Ninja Hit",
+      "icon": "https://i.imgur.com/VCcxQuR.png",
+      "screenshot": "https://i.imgur.com/uLlC3rZ.png",
+      "button": {
+        "image": "https://i.imgur.com/WIdRbW7.png",
+        "x": 0,
+        "y": -350
+      }
+    },
+    "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+      "icon": "https://i.imgur.com/WCnXBJz.png",
+      "screenshot": "https://i.imgur.com/Ix3oFZw.jpg",
+      "button": {
+        "image": "https://i.imgur.com/iLqkACs.png",
+        "x": 0,
+        "y": -340
+      }
+    },
+    "draw-battle": {
+      "id": "309115386788618",
+      "name": "Draw Battle",
+      "icon": "https://i.imgur.com/XWuntME.png",
+      "screenshot": "https://i.imgur.com/GqT3Jk3.png",
+      "button": {
+        "image": "https://i.imgur.com/udeQLeM.png",
+        "x": 0,
+        "y": -300
+      }
+    }
+  },
+  "configs": {
+    "default": {
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [2, 7, 12, 16, 20]
+    }
+  },
+  "sets": {
+    "default": {
+      "shoot-bubbles": 10,
+      "jumping-girl": 10
+    }
+  }
+}

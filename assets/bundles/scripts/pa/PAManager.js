@@ -1,6 +1,6 @@
 var Configs = require("PAConfigs");
-var JS = require("JS");
-var UI = require("UI");
+var JS = require("PAJS");
+var UI = require("PAUI");
 
 var Manager = cc.Class({
 	extends: cc.Component,

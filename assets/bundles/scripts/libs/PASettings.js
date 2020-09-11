@@ -1,4 +1,4 @@
-var JS = require("JS");
+var JS = require("PAJS");
 module.exports = {
 	has(key) {
 		return cc.sys.localStorage.getItem(key) !== null;

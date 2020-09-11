@@ -1,5 +1,5 @@
-var JS = require("JS");
-var Resources = require("Resources");
+var JS = require("PAJS");
+var Resources = require("PAResources");
 module.exports = {
 	// instantiate
 	create(prefab, script) {
@@ -78,19 +78,31 @@ module.exports = {
 	},
 	// sprite
 	sprite(target, value, callback) {
-		if (JS.isString(value)) {
+		if (isString(value)) {
 			Resources.loadAsync(value).then((d) => {
 				target.spriteFrame = new cc.SpriteFrame(d);
-				callback && callback();
+				raise(callback);
 			});
-		} else if (JS.isType(value, cc.SpriteFrame)) {
+		} else if (isType(value, cc.SpriteFrame)) {
 			target.spriteFrame = value;
-			callback && callback();
+			raise(callback);
 		} else {
-			callback && callback();
+			raise(callback);
 		}      
 	},
 	spriteAsync(target, value) {
 		return new Promise((...args) => this.sprite(target, value, ...args));
 	},
+	// loaders
+	loadAsync(...args) {
+		return new Promise((resolve, reject) => {
+			cc.loader.load(...args, (errors, result) => {
+				if (errors) {
+					reject(errors);
+				} else {
+					resolve(result);
+				}
+			});
+		});
+    },
 };
