@@ -111,8 +111,22 @@
   },
   "sets": {
     "default": {
+    },
+    "test": {
       "shoot-bubbles": 10,
-      "jumping-girl": 10
+      "jumping-girl": 10,
+      "connect-animals": 10,
+      "candy-kingdom": 10,
+      "color-link": 10,
+      "ninja-hit": 10,
+      "basket-hit": 10,
+      "pair-matching": 10,
+      "draw-battle": 10
+    }
+  },
+  "rules": {
+    "test": {
+      "user": ["3053934561330408"]
     }
   }
 }
