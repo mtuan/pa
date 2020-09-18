@@ -1,4 +1,8 @@
 {
+  "basket-hit": {
+    "controller": "controllers/v1",
+    "config": "configs/basket-hit.json"
+  },
   "ninja-hit": {
     "controller": "controllers/v1",
     "config": "configs/ninja-hit.json"
