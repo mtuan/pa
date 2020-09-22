@@ -26,23 +26,16 @@ cc.Class({
 	getSrcId() {
 		return this.local.id;
 	},
-	getInter(id) {
-		var data = this.local.templates[id];
-		if (!data) {
-			return;
-		}
-		return {
-			id: id,
-			type: data.template || "template",
-			data: data
-		};
-	},
-	loadInter() {
+	getNext(type) {
 		var id = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
-		if (!id) {
-			return;
+		if (id) {
+			var app = this.local.templates[id];
+			return {
+				id: id,
+				app: app,
+				template: app[type]
+			};
 		}
-		return this.getInter(id);
 	},
 	updateInterCount() {
 		var date = Settings.getNum("pa-inter-date");
@@ -71,17 +64,11 @@ cc.Class({
 			this.saveLocal();
 		}
 	},
-	showIcon(id) {
-		this.updateAppRate(id, this.local.configs["icon-show"] || 0.01);
+	show(id, type) {
+		this.updateAppRate(id, this.local.configs["%s-show".format(type)] || 0.01);
 	},
-	clickIcon(id) {
-		this.updateAppRate(id, this.local.configs["icon-click"] || 0.5);
-	},
-	showInter(id) {
-		this.updateAppRate(id, this.local.configs["inter-show"] || 0.1);
-	},
-	clickInter(id) {
-		this.updateAppRate(id, this.local.configs["inter-click"] || 0.5);
+	click(id, type) {
+		this.updateAppRate(id, this.local.configs["%s-click".format(type)] || 0.5);
 	},
 	saveLocal() {
 		// ensure that values are not too small

@@ -3,7 +3,7 @@
   "uuid": "a50bf097-e46f-48cd-a207-cc9773700d08",
   "isBundle": true,
   "bundleName": "controller",
-  "priority": 1,
+  "priority": "10",
   "compressionType": {
     "fb-instant-games": "merge_all_json",
     "web-mobile": "none"
