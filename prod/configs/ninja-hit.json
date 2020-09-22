@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "id": "634974810429385",
   "templates": {
     "onet-x": {
@@ -31,30 +31,16 @@
     "default": {
       "inter-show": 0.1,
       "inter-click": 0.5,
-      "inter-index": [
-        2,
-        7,
-        12,
-        16,
-        20
-      ]
+      "inter-index": [2, 7, 12, 16, 20]
     }
   },
   "sets": {
     "default": {
-      
-    },
-    "test": {
       "shoot-bubbles": 50,
       "onet-x": 50
     }
   },
   "rules": {
-    "test": {
-      "user": [
-        "3053934561330408",
-        "2837824286337065"
-      ]
-    }
+
   }
 }
