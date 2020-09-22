@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 4,
   "id": "634974810429385",
   "templates": {
     "onet-x": {
@@ -11,7 +11,7 @@
       "button": {
         "image": "https://i.imgur.com/9OMHvPp.png",
         "x": 0,
-        "y": -350
+        "y": -275
       }
     },
     "shoot-bubbles": {
@@ -23,7 +23,7 @@
       "button": {
         "image": "https://i.imgur.com/4RLkhSq.png",
         "x": 0,
-        "y": -250
+        "y": -355
       }
     }
   },
