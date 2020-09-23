@@ -32,7 +32,7 @@ cc.Class({
 		var d = {
 			"game-id": this.data.src
 		};
-		FBInstant.switchGameAsync(this.data.id, d).then(() => {
+		FBInstant.switchGameAsync(this.data.app.id, d).then(() => {
 			this.onSwitch();
 		}, (e) => {
 			this.onCancel();
