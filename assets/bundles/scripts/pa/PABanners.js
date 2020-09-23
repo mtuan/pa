@@ -27,7 +27,10 @@ cc.Class({
 		}
 		this.loading = true;
 		return this.createPrefabAsync(next)
-			.then((r) => this.instance = r)
+			.then((r) => {
+				this.instance = r;
+				UI.emit(this.node, "ready", r);
+			})
 			.finally(() => this.loading = false);
 	},
 	showAsync() {
@@ -44,6 +47,7 @@ cc.Class({
 		FBInstant.logEvent("PA_BANNER_SHOW", 0, {
 			id: instanceId
 		});
+		UI.clear(this.node);
 		UI.add(instance.node, this.node);
 		return instance.showAsync();
 	},

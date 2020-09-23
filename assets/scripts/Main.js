@@ -25,6 +25,10 @@ cc.Class({
 		this.showAsync(banners);
 	},
 	showAsync(ads) {
-		ads.showAsync().then(() => this.showAsync(ads));
+		if (ads.instance) {
+			ads.showAsync().then(() => this.showAsync(ads));
+		} else {
+			setTimeout(() => this.showAsync(ads), 1000);
+		}
 	}
 });

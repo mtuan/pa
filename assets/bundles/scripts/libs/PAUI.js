@@ -33,6 +33,9 @@ module.exports = {
 	remove(node, cleanup = true) {
 		node.removeFromParent(cleanup);
 	},
+	clear(node, cleanup = true) {
+		node.removeAllChildren(cleanup);
+	},
 	// events
 	emit(node, event, ...args) {
 		node.emit(event, ...args);
