@@ -105,4 +105,8 @@ module.exports = {
 			});
 		});
     },
+    // actions
+    action(node, action) {
+    	node.runAction(action);
+    }
 };

@@ -22,7 +22,24 @@ cc.Class({
 	},
 	showAsync() {
 		this.updateLayout();
+		UI.action(this.play.node, this.createAnimation());
 		return this._super();
+	},
+	createAnimation() {
+		var scaleRatio = 1.07;
+		var scaleDuration = 0.15;
+		var delayTime = 3;
+        return cc.repeatForever(cc.sequence(
+            cc.scaleTo(scaleDuration, scaleRatio),
+            cc.scaleTo(scaleDuration, 1),
+            cc.scaleTo(scaleDuration, scaleRatio),
+            cc.scaleTo(scaleDuration, 1),
+            cc.scaleTo(scaleDuration, scaleRatio),
+            cc.scaleTo(scaleDuration, 1),
+            cc.scaleTo(scaleDuration, scaleRatio),
+            cc.scaleTo(scaleDuration, 1),
+            cc.delayTime(delayTime)
+        ));
 	},
 	updateLayout() {
 		var frameSize = UI.size(this.node);
@@ -31,7 +48,7 @@ cc.Class({
 		var sy = frameSize.height / size.height;
 		var ratio = frameSize.width / frameSize.height;
 		var scale = Math.min(sx, sy);
-		
+
 		var width = size.height * ratio;
 		UI.size(this.content, cc.size(width, size.height));
 		UI.scale(this.content, sy);
