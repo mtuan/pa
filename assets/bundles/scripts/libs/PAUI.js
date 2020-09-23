@@ -78,16 +78,16 @@ module.exports = {
 	},
 	// sprite
 	sprite(target, value, callback) {
-		if (isString(value)) {
+		if (JS.isString(value)) {
 			Resources.loadAsync(value).then((d) => {
 				target.spriteFrame = new cc.SpriteFrame(d);
-				raise(callback);
+				callback && callback();
 			});
-		} else if (isType(value, cc.SpriteFrame)) {
+		} else if (JS.isType(value, cc.SpriteFrame)) {
 			target.spriteFrame = value;
-			raise(callback);
+			callback && callback();
 		} else {
-			raise(callback);
+			callback && callback();
 		}      
 	},
 	spriteAsync(target, value) {

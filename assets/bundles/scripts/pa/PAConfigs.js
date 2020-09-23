@@ -26,14 +26,14 @@ cc.Class({
 	getSrcId() {
 		return this.local.id;
 	},
-	getNext(type) {
+	getNext() {
 		var id = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
 		if (id) {
 			var app = this.local.templates[id];
 			return {
+				src: this.local.id,
 				id: id,
-				app: app,
-				template: app[type]
+				app: app
 			};
 		}
 	},
@@ -64,11 +64,14 @@ cc.Class({
 			this.saveLocal();
 		}
 	},
-	show(id, type) {
-		this.updateAppRate(id, this.local.configs["%s-show".format(type)] || 0.01);
+	onShow(id, type) {
+		this.updateAppRate(id, this.local.configs[JS.format("%s-show", type)] || 0.01);
 	},
-	click(id, type) {
-		this.updateAppRate(id, this.local.configs["%s-click".format(type)] || 0.5);
+	onClick(id, type) {
+		this.updateAppRate(id, this.local.configs[JS.format("%s-click", type)] || 0.5);
+	},
+	onCancel(id, type) {
+		// TODO: update show rate when user cancel
 	},
 	saveLocal() {
 		// ensure that values are not too small
@@ -100,9 +103,11 @@ cc.Class({
 		};
 	},
 	_getSet(d) {
-		for (var k in d.rules) {
-			if (this._matchRule(d.rules[k])) {
-				return d.rules[k].set || k;
+		if (d.rules) {
+			for (var k in d.rules) {
+				if (this._matchRule(d.rules[k])) {
+					return d.rules[k].set || k;
+				}
 			}
 		}
 	},

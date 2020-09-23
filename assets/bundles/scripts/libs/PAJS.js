@@ -118,5 +118,34 @@ module.exports = {
     		}
     	}
     	return chances.length - 1;
-    }	
+    },
+    // array
+    loop(count, fn) {
+		var r = [];
+		for (var i = 0; i < count; i++) {
+			r.push(fn(i));
+		}
+		return r;
+	},
+	first(array, condition) {
+        if (this.isFunction(condition)) {
+            return this.first(this.where(array, condition));
+        }
+        if (this.isNumber(condition)) {
+            return this.take(array, condition);
+        }
+        return array.length > 0 ? array[0] : undefined;
+    },
+    take(array, count) {
+        return array.slice(0, count);
+    },
+    where(array, condition) {
+        var r = [];
+        for (var i = 0; i < array.length; i++) {
+            if (!condition || condition(array[i], i)) {
+                r.push(array[i]);
+            }
+        }
+        return r;
+    },
 };

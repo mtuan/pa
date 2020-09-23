@@ -1,57 +1,53 @@
 var Manager = require("PAManager");
+var JS = require("PAJS");
 var UI = require("PAUI");
 cc.Class({
-	extends: cc.Component,
+	extends: require("PAAds"),
 	properties: {
 		content: cc.Node,
 		bg: cc.Sprite,
 		play: cc.Sprite,
 	},
-	showAsync(onClick, onClose) {
-		return new Promise((resolve, reject) => {
-			UI.on(this.node, "click", onClick);
-			UI.on(this.node, "close", (canceled) => {
-				UI.remove(this.node);
-				onClose && onClose(canceled);
-				resolve();
+	updateDataAsync(d) {
+		var inter = d.app.inter;
+		if (inter && !JS.isString(inter)) {
+			var p1 = UI.spriteAsync(this.bg, inter.image);
+			var p2 = UI.spriteAsync(this.play, inter.play.image).then(() => {
+				UI.pos(this.play.node, cc.v2(inter.play.x, inter.play.y));
 			});
-		});
+			return Promise.all([p1, p2]);
+		} else {
+			return Promise.resolve();
+		}
 	},
-	setDataAsync(d) {
-		this.data = d;
-		var p1 = d.screenshot ? UI.spriteAsync(this.bg, d.screenshot) : Promise.resolve();
-		var p2 = d.button ? UI.spriteAsync(this.play, d.button.image).then(() => {
-			UI.pos(this.play.node, cc.v2(d.button.x, d.button.y));
-		}) : Promise.resolve();
-		return Promise.all([p1, p2]).then(() => {
-			this.updateLayout();
-		});
+	showAsync() {
+		this.updateLayout();
+		return this._super();
 	},
 	updateLayout() {
-		var winSize = cc.winSize;
+		var frameSize = UI.size(this.node);
 		var size = UI.size(this.bg.node);
-		var sx = winSize.width / size.width;
-		var sy = winSize.height / size.height;
-		var ratio = winSize.width / winSize.height;
+		var sx = frameSize.width / size.width;
+		var sy = frameSize.height / size.height;
+		var ratio = frameSize.width / frameSize.height;
 		var scale = Math.min(sx, sy);
 		
 		var width = size.height * ratio;
 		UI.size(this.content, cc.size(width, size.height));
 		UI.scale(this.content, sy);
 		UI.scale(this.bg.node, cc.v2(Math.max(width / size.width, 1), 1));
+		UI.pos(this.node, cc.v2(0, 0));
 	},
 	onClose() {
-		UI.emit(this.node, "close");
+		UI.emit(this.node, "done");
+		UI.remove(this.node);
 	},
-	onPlay() {
-		UI.emit(this.node, "click");
-		var d = {
-			"src-game": Manager.active.getSrcId()
-		};
-		FBInstant.switchGameAsync(this.data.id, d).then(() => {
-			UI.emit(this.node, "close");
-		}, (e) => {
-			UI.emit(this.node, "close", true);
-		});
+	onCancel() {		
+		this._super();
+		this.onClose();
+	},
+	onSwitch() {
+		this._super();
+		this.onClose();
 	}
 });
