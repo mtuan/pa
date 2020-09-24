@@ -6,7 +6,7 @@ var VIDEO = 2;
 
 // mock data
 var ME = {
-	id: 1,
+	id: "3053934561330408",
 	name: "Tuan"
 };
 var FRIENDS = {

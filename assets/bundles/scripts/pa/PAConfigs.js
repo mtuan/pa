@@ -9,16 +9,20 @@ cc.Class({
 		this.data = d;
 		var remote = this._getRemote(d);
 		this.local = this._loadLocal();
-		if (!this.local || this.local.version != remote.version) {
+		if (!this.local || this.local.version != remote.data.version) {
 			this.resetCount();
-			this.resetRates();
-			this.local = remote;
+			this.resetRates(); 
+			this.local = {
+				version: remote.data.version, 
+				apps: remote.apps
+			};
 			this.saveLocal();
-		} else {
-			this.local.id = remote.id;
-			this.local.templates = remote.templates;
-			this.local.configs = remote.configs;
 		}
+		if (remote.data) {
+			this.local.id = remote.data.id;
+			this.local.templates = remote.data.templates;
+		}
+		this.local.configs = remote.configs;
 	},
 	resetCount() {
 		Settings.remove("pa-inter-count");
@@ -112,11 +116,10 @@ cc.Class({
 	_getRemote(d) {
 		var set = this._getSet(d);
 		return {
-			version: d.version,
-			id: d.id,
-			templates: d.templates,
-			apps: d.sets[set] || d.sets["default"],
-			configs: d.configs[set] || d.configs["default"]
+			set: set,
+			data: d,
+			apps: d.sets && (d.sets[set] || d.sets["default"]),
+			configs: d.configs && (d.configs[set] || d.configs["default"])
 		};
 	},
 	_getSet(d) {
