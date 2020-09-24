@@ -28,6 +28,10 @@ cc.Class({
 		UI.emit(this.node, "cancel");
 	},
 	onPlay() {
+		if (this._switching) {
+			return;
+		}
+		this._switching = true;
 		this.onClick();
 		var d = {
 			"game-id": this.data.src
@@ -36,6 +40,8 @@ cc.Class({
 			this.onSwitch();
 		}, (e) => {
 			this.onCancel();
+		}).finally(() => {
+			this._switching = false;
 		});
 	}
 });
