@@ -7,13 +7,16 @@ cc.Class({
 	},
 	setData(d) {
 		this.data = d;
-		this.remote = this._getRemote(d);
+		var remote = this._getRemote(d);
 		this.local = this._loadLocal();
-		if (!this.local || this.local.version != this.remote.version) {
+		if (!this.local || this.local.version != remote.version) {
 			this.resetCount();
 			this.resetRates();
 			this.local = this.remote;
 			this.saveLocal();
+		} else {
+			this.local.templates = remote.templates;
+			this.local.configs = remote.configs;
 		}
 	},
 	resetCount() {
@@ -64,11 +67,20 @@ cc.Class({
 			this.saveLocal();
 		}
 	},
+	hasInter() {
+		return this.hasAd("inter");
+	},
+	hasBanner() {
+		return this.hasAd("banner");
+	},
+	hasAd(type) {
+		return !this.local.configs[JS.format("no-%s", type)];
+	},
 	onShow(id, type) {
-		this.updateAppRate(id, this.local.configs[JS.format("%s-show", type)] || 0.01);
+		this.updateAppRate(id, this.local.configs[JS.format("%s-show", type)] || 0);
 	},
 	onClick(id, type) {
-		this.updateAppRate(id, this.local.configs[JS.format("%s-click", type)] || 0.5);
+		this.updateAppRate(id, this.local.configs[JS.format("%s-click", type)] || 0);
 	},
 	onCancel(id, type) {
 		// TODO: update show rate when user cancel

@@ -38,6 +38,7 @@ var Manager = cc.Class({
 			if (!d.disabled) {
 				this.configs = new Configs(d);
 			}
+			return this.configs;
 		});
 	},
 	// handle events

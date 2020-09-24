@@ -12,17 +12,26 @@ cc.Class({
 		inters: cc.Node,
 		banners: cc.Node
 	},
-	async onLoad() {
+	ctor() {
 		window.Main = this;
-		
-		var inters = this.manager.createInters(this.inters);
+	},
+	async onLoad() {
 		var banners = this.manager.createBanners(this.banners);
 
 		this.manager.bundle = this.bundle;
-		await this.manager.loadAsync("configs/basket-hit.json");
-		await Promise.allSettled([inters.loadAsync(), banners.loadAsync()]);
-		this.showAsync(inters);
-		this.showAsync(banners);
+		var configs = await this.manager.loadAsync("configs/basket-hit.json");
+		if (configs.hasInter()) {
+			var inters = this.manager.createInters(this.inters);
+			inters.loadAsync().then(() => {
+				this.showAsync(inters);
+			});
+		}
+		if (configs.hasBanner()) {
+			var banners = this.manager.createBanners(this.banners);
+			banners.loadAsync().then(() => {
+				this.showAsync(banners);
+			});
+		}
 	},
 	showAsync(ads) {
 		if (ads.instance) {
