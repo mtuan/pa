@@ -12,7 +12,7 @@ cc.Class({
 		if (!this.local || this.local.version != remote.version) {
 			this.resetCount();
 			this.resetRates();
-			this.local = this.remote;
+			this.local = remote;
 			this.saveLocal();
 		} else {
 			this.local.templates = remote.templates;
