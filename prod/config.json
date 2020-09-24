@@ -3,6 +3,10 @@
     "controller": "controllers/v1",
     "config": "configs/basket-hit.json"
   },
+  "basket-hit-v2": {
+    "controller": "controllers/v2",
+    "config": "configs/basket-hit-v2.json"
+  },
   "ninja-hit": {
     "controller": "controllers/v1",
     "config": "configs/ninja-hit.json"
