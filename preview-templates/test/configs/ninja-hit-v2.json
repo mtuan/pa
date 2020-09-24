@@ -1,0 +1,60 @@
+{
+  "version": 5,
+  "id": "ninja-hit",
+  "templates": {
+    "shoot-bubbles": {
+      "id": "227788504726017",
+      "name": "Shoot Bubbles",
+      "icon": "https://i.imgur.com/cmA3MUO.png",
+      "banner": "https://i.imgur.com/IvVcRBz.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/6XQiVCi.jpg",
+        "play": {
+          "image": "https://i.imgur.com/4RLkhSq.png",
+          "x": 0,
+          "y": -355
+        }
+      }
+    },
+    "onet-x": {
+      "id": "220801932630391",
+      "name": "OnetX Connect Animals",
+      "icon": "https://i.imgur.com/dJvBPAO.jpg",
+      "banner": "https://i.imgur.com/cg0Jp4Q.png",
+      "inter": {
+        "image": "https://i.imgur.com/LKtatmr.jpg",
+        "play": {
+          "image": "https://i.imgur.com/9OMHvPp.png",
+          "x": 0,
+          "y": -275
+        }
+      }
+    }
+  },
+  "configs": {
+    "default": {
+      "no-banner": false,
+      "no-inter": false,
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [
+        2,
+        7,
+        12,
+        16,
+        20
+      ]
+    }
+  },
+  "sets": {
+    "default": {
+      "shoot-bubbles": 50,
+      "onet-x": 50
+    }
+  },
+  "rules": {
+    "test": {
+      "user": ["3727884593892630", "2988101194627217", "3086092938153217"]
+    }
+  }
+}

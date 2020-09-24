@@ -15,6 +15,7 @@ cc.Class({
 			this.local = remote;
 			this.saveLocal();
 		} else {
+			this.local.id = remote.id;
 			this.local.templates = remote.templates;
 			this.local.configs = remote.configs;
 		}
@@ -31,14 +32,18 @@ cc.Class({
 	},
 	getNext() {
 		var id = JS.rndKey(this.local.apps, (apps, key) => apps[key]);
-		if (id) {
-			var app = this.local.templates[id];
-			return {
-				src: this.local.id,
-				id: id,
-				app: app
-			};
+		if (!id) {
+			return;
 		}
+		var app = this.local.templates[id];
+		if (!app) {
+			return;
+		}
+		return {
+			src: this.local.id,
+			id: id,
+			app: app
+		};
 	},
 	updateInterCount() {
 		var date = Settings.getNum("pa-inter-date");

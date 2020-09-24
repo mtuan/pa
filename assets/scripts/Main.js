@@ -10,7 +10,8 @@ cc.Class({
 		manager: require("PAManager"),
 		bundle: require("Bundle"),
 		inters: cc.Node,
-		banners: cc.Node
+		banners: cc.Node,
+		id: ""
 	},
 	ctor() {
 		window.Main = this;
@@ -18,8 +19,13 @@ cc.Class({
 	async onLoad() {
 		var banners = this.manager.createBanners(this.banners);
 
+		var apps = await Resources.loadJsonAsync("test/config.json");
+		var app = apps[this.id];
+		if (!app) {
+			return;
+		}
 		this.manager.bundle = this.bundle;
-		var configs = await this.manager.loadAsync("configs/basket-hit.json");
+		var configs = await this.manager.loadAsync("test/" + app.config);
 		if (configs.hasInter()) {
 			var inters = this.manager.createInters(this.inters);
 			inters.loadAsync().then(() => {

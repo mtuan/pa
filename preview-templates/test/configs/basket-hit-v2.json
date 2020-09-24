@@ -1,0 +1,180 @@
+{
+  "version": 4,
+  "id": "basket-hit",
+  "templates": {
+    "basket-hit": {
+      "id": "1224362211248752",
+      "name": "Basket Hit",
+      "icon": "https://i.imgur.com/BiB1taV.png",
+      "banner": "https://i.imgur.com/asgj3qQ.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/MDGxAx7.jpg",
+        "play": {
+          "image": "https://i.imgur.com/PJRgOHA.png",
+          "x": 0,
+          "y": -320
+        }
+      }
+    },
+    "jumping-girl": {
+      "id": "347909499499999",
+      "name": "Jumping Girl",
+      "icon": "https://i.imgur.com/dPfRbzi.png",
+      "banner": "https://i.imgur.com/kg0JSzj.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/sY1Ri8n.jpg",
+        "play": {
+          "image": "https://i.imgur.com/O1PdIpX.png",
+          "x": 0,
+          "y": -250
+        }
+      }
+    },
+    "shoot-bubbles": {
+      "id": "227788504726017",
+      "name": "Shoot Bubbles",
+      "icon": "https://i.imgur.com/cmA3MUO.png",
+      "banner": "https://i.imgur.com/IvVcRBz.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/6XQiVCi.jpg",
+        "play": {
+          "image": "https://i.imgur.com/4RLkhSq.png",
+          "x": 0,
+          "y": -360
+        }
+      }
+    },
+    "connect-animals": {
+      "id": "1043181865796678",
+      "name": "Connect Animals",
+      "icon": "https://i.imgur.com/JClSMev.png",
+      "banner": "https://i.imgur.com/JlgyrMM.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/Lo31gPP.jpg",
+        "play": {
+          "image": "https://i.imgur.com/8KrftHc.png",
+          "x": 0,
+          "y": -320
+        }
+      }
+    },
+    "candy-kingdom": {
+      "id": "3280083422063465",
+      "name": "Candy Kingdom",
+      "icon": "https://i.imgur.com/YbxKz77.png",
+      "banner": "https://i.imgur.com/wkEDFTJ.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/MRopjrx.jpg",
+        "play": {
+          "image": "https://i.imgur.com/7cIPKnk.png",
+          "x": 0,
+          "y": -520
+        }
+      }
+    },
+    "color-link": {
+      "id": "529117187574163",
+      "name": "Color Link",
+      "icon": "https://i.imgur.com/Wek57Ep.png",
+      "banner": "https://i.imgur.com/LcNTTpN.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/JdyLwSU.png",
+        "play": {
+          "image": "https://i.imgur.com/8KrftHc.png",
+          "x": 0,
+          "y": -200
+        }
+      }
+    },
+    "ninja-hit": {
+      "id": "634974810429385",
+      "name": "Ninja Hit",
+      "icon": "https://i.imgur.com/VCcxQuR.png",
+      "banner": "https://i.imgur.com/AdT5wmp.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/uLlC3rZ.png",
+        "play": {
+          "image": "https://i.imgur.com/WIdRbW7.png",
+          "x": 0,
+          "y": -350
+        }
+      }
+    },
+    "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+      "icon": "https://i.imgur.com/WCnXBJz.png",
+      "banner": "https://i.imgur.com/DJlueS9.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "play": {
+          "image": "https://i.imgur.com/iLqkACs.png",
+          "x": 0,
+          "y": -340
+        }
+      }
+    },
+    "draw-battle": {
+      "id": "309115386788618",
+      "name": "Draw Battle",
+      "icon": "https://i.imgur.com/XWuntME.png",
+      "banner": "https://i.imgur.com/Ly8q1uS.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/htukGHO.jpg",
+        "play": {
+          "image": "https://i.imgur.com/qnB6bdJ.png",
+          "x": 0,
+          "y": -350
+        }
+      }
+    },
+    "onet-x": {
+      "id": "220801932630391",
+      "name": "OnetX Connect Animals",
+      "icon": "https://i.imgur.com/dJvBPAO.jpg",
+      "banner": "https://i.imgur.com/cg0Jp4Q.png",
+      "inter": {
+        "image": "https://i.imgur.com/LKtatmr.jpg",
+        "play": {
+          "image": "https://i.imgur.com/9OMHvPp.png",
+          "x": 0,
+          "y": -350
+        }
+      }
+    }
+  },
+  "configs": {
+    "default": {
+      "no-banner": false,
+      "no-inter": false,
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [
+        2,
+        7,
+        12,
+        16,
+        20
+      ]
+    }
+  },
+  "sets": {
+    "test": {
+      "shoot-bubbles": 10,
+      "jumping-girl": 10,
+      "connect-animals": 10,
+      "candy-kingdom": 10,
+      "color-link": 10,
+      "ninja-hit": 10,
+      "basket-hit": 10,
+      "pair-matching": 10,
+      "draw-battle": 10,
+      "onet-x": 10
+    }
+  },
+  "rules": {
+    "test": {
+      "user": ["3727884593892630", "2988101194627217", "3086092938153217"]
+    }
+  }
+}
