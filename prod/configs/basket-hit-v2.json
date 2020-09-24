@@ -159,7 +159,7 @@
     }
   },
   "sets": {
-    "default": {
+    "test": {
       "shoot-bubbles": 10,
       "jumping-girl": 10,
       "connect-animals": 10,
@@ -170,6 +170,11 @@
       "pair-matching": 10,
       "draw-battle": 10,
       "onet-x": 10
+    }
+  },
+  "rules": {
+    "test": {
+      "user": ["3727884593892630", "2988101194627217", "3086092938153217"]
     }
   }
 }
