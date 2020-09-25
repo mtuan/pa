@@ -33,20 +33,23 @@
   },
   "configs": {
     "default": {
-      "no-banner": false,
+      "no-banner": true,
       "no-inter": false,
       "inter-show": 0.1,
       "inter-click": 0.5,
-      "inter-index": [
-        2,
-        7,
-        12,
-        16,
-        20
-      ]
+      "inter-index": [2, 7, 12, 16, 20]
+    },
+    "test": {
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [2, 7, 12, 16, 20]
     }
   },
   "sets": {
+    "default": {
+      "shoot-bubbles": 50,
+      "onet-x": 50
+    },
     "test": {
       "shoot-bubbles": 50,
       "onet-x": 50
