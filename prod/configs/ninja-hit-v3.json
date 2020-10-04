@@ -34,7 +34,7 @@
   "configs": {
     "default": {
       "no-banner": false,
-      "no-inter": true,
+      "no-inter": false,
       "banner-preview": true,
       "inter-show": 0.1,
       "inter-click": 0.5,
