@@ -35,7 +35,7 @@
     "default": {
       "no-banner": false,
       "no-inter": false,
-      "banner-preview": true,
+      "banner-preview": false,
       "inter-show": 0.1,
       "inter-click": 0.5,
       "inter-index": [2, 7, 12, 16, 20]
