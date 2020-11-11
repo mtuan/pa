@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "id": "ninja-hit",
   "templates": {
     "shoot-bubbles": {
@@ -29,19 +29,31 @@
           "y": -275
         }
       }
+    },
+    "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+      "icon": "https://i.imgur.com/WCnXBJz.png",
+      "banner": "https://i.imgur.com/DJlueS9.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "play": {
+          "image": "https://i.imgur.com/iLqkACs.png",
+          "x": 0,
+          "y": -300
+        }
+      }
     }
   },
   "configs": {
     "default": {
       "no-banner": false,
       "no-inter": false,
-      "banner-preview": false,
       "inter-show": 0.1,
       "inter-click": 0.5,
       "inter-index": [2, 7, 12, 16, 20]
     },
     "test": {
-      "banner-preview": true,
       "inter-show": 0.1,
       "inter-click": 0.5,
       "inter-index": [2, 7, 12, 16, 20]
@@ -50,11 +62,13 @@
   "sets": {
     "default": {
       "shoot-bubbles": 50,
-      "onet-x": 50
+      "onet-x": 25,
+      "pair-matching": 25
     },
     "test": {
       "shoot-bubbles": 50,
-      "onet-x": 50
+      "onet-x": 25,
+      "pair-matching": 25
     }
   },
   "rules": {
