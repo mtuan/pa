@@ -47,11 +47,14 @@
   },
   "configs": {
     "default": {
-      "no-banner": false,
       "no-inter": false,
       "inter-show": 0.1,
       "inter-click": 0.5,
-      "inter-index": [2, 7, 12, 16, 20]
+      "inter-index": [2, 7, 12, 16, 20],
+
+      "no-banner": false,
+      "banner-show": 0.1,
+      "banner-click": 0.5
     },
     "test": {
       "inter-show": 0.1,
