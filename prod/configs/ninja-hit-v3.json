@@ -67,16 +67,6 @@
       "shoot-bubbles": 50,
       "onet-x": 25,
       "pair-matching": 25
-    },
-    "test": {
-      "shoot-bubbles": 50,
-      "onet-x": 25,
-      "pair-matching": 25
-    }
-  },
-  "rules": {
-    "test": {
-      "user": ["3053934561330408", "2837824286337065"]
     }
   }
 }
