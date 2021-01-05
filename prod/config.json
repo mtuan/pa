@@ -14,5 +14,9 @@
   "ninja-hit-v2": {
     "controller": "controllers/v2",
     "config": "configs/ninja-hit-v3.json"
+  },
+    "onet-x-v2": {
+    "controller": "controllers/v2",
+    "config": "configs/onet-x-v2.json"
   }
 }
