@@ -15,8 +15,8 @@
     "controller": "controllers/v2",
     "config": "configs/ninja-hit-v3.json"
   },
-   "onet-x": {
+   "onet-x-v2": {
     "controller": "controllers/v2",
-    "config": "configs/onet-x-v2.json"
+    "config": "configs/onet-x-v3.json"
   }
 }
