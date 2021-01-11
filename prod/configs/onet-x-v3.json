@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "id": "onet-x",
   "templates": {
     "shoot-bubbles": {
@@ -88,11 +88,11 @@
     }
   },
   "sets": {
-    "default": {
+    "test": {
       "shoot-bubbles": 50,
       "pair-matching": 50
     }, 
-    "test":{
+    "default":{
         "line98": 10,
      "connect-animals":30,
      "block-puzzle":30,
@@ -101,7 +101,7 @@
   },
   "rules": {
     "test": {
-      "user": ["3249848621735635","3648532508499241"]
+      "user": ["3249848621735635000","3648532508499241000"]
     }
   }
 }
