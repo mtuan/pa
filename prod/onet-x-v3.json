@@ -1,0 +1,107 @@
+{
+  "version": 9,
+  "id": "onet-x",
+  "templates": {
+    "shoot-bubbles": {
+      "id": "227788504726017",
+      "name": "Shoot Bubbles",
+      "icon": "https://i.imgur.com/cmA3MUO.png",
+      "banner": "https://i.imgur.com/IvVcRBz.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/6XQiVCi.jpg",
+        "play": {
+          "image": "https://i.imgur.com/4RLkhSq.png",
+          "x": 0,
+          "y": -345
+        }
+      }
+    },
+    "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+      "icon": "https://i.imgur.com/WCnXBJz.png",
+      "banner": "https://i.imgur.com/DJlueS9.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "play": {
+          "image": "https://i.imgur.com/iLqkACs.png",
+          "x": 0,
+          "y": -330
+        }
+      }
+    },
+    "block-puzzle": {
+         "id": "1564585660390128",
+          "name": "Block Puzzle",
+          "icon": "https://i.imgur.com/rf91NNd.jpg",
+           "banner": "https://i.imgur.com/OfvmgPO.jpg",
+           "inter":{
+           "image": "https://i.imgur.com/0ysX589.jpg",
+          
+           "play": {"image": "https://i.imgur.com/tJNKvzh.png", "x": 0, "y": -320 }
+          }
+    },
+    "connect-animals": {
+      "id": "1043181865796678",
+      "name": "Connect Animals",
+      "icon": "https://i.imgur.com/JClSMev.png",
+      "banner": "https://i.imgur.com/JlgyrMM.jpg",
+      "inter": {
+              "image": "https://i.imgur.com/Lo31gPP.jpg",
+              "play": {
+                "image": "https://i.imgur.com/8KrftHc.png",
+                "x": 0,
+                "y": -345
+              }
+       }
+    },
+    "line98": {
+      "id": "498866996936248",
+      "name": "Line 98",
+      "icon": "https://i.imgur.com/1Lcfr8O.png",
+      "banner": "https://i.imgur.com/kD9uAIv.jpg",
+      "inter": {
+        "image" : "https://i.imgur.com/s7yVnB4.jpg",
+        "play" : {
+          "image": "https://i.imgur.com/BHGON2E.png",
+          "x": 0,
+          "y": -320
+        }
+      }
+    }
+  },
+  "configs": {
+    "default": {
+      "no-inter": false,
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [2, 7, 12, 16, 20],
+
+      "no-banner": false,
+      "banner-show": 0.1,
+      "banner-click": 0.5
+    },
+    "test": {
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [1, 2, 3, 4, 5]
+    }
+  },
+  "sets": {
+    "default": {
+      "shoot-bubbles": 50,
+      "pair-matching": 50
+    }, 
+    "test":{
+        "line98": 10,
+     "connect-animals":30,
+     "block-puzzle":30,
+     "pair-matching":30
+    }
+  },
+  "rules": {
+    "test": {
+      "user": ["3249848621735635"]
+    }
+  }
+}
