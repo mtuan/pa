@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "id": "onet-x",
   "templates": {
     "shoot-bubbles": {
@@ -80,18 +80,9 @@
       "no-banner": false,
       "banner-show": 0.1,
       "banner-click": 0.5
-    },
-    "test": {
-      "inter-show": 0.1,
-      "inter-click": 0.5,
-      "inter-index": [1, 2, 3, 4, 5]
     }
   },
   "sets": {
-    "test": {
-      "shoot-bubbles": 50,
-      "pair-matching": 50
-    }, 
     "default":{
         "line98": 10,
      "connect-animals":30,
@@ -100,8 +91,5 @@
     }
   },
   "rules": {
-    "test": {
-      "user": ["3249848621735635000","3648532508499241000"]
-    }
   }
 }
