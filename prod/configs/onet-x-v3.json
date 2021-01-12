@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "id": "onet-x",
   "templates": {
     "shoot-bubbles": {
@@ -84,8 +84,10 @@
   },
   "sets": {
     "default":{
-       
-     "block-puzzle":100
+           "line98":10, 
+      "block-puzzle":30,
+	  "pair-matching" : 30,
+	  "connect-animals" : 30
     }
   },
   "rules": {
