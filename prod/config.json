@@ -15,12 +15,12 @@
     "controller": "controllers/v2",
     "config": "configs/ninja-hit-v3.json"
   },
-   "onet-x-v2": {
+   "onet-x-v2-old": {
     "controller": "controllers/v2",
     "config": "configs/onet-x-v4.json"
   },
   "onet-x-test": {
     "controller": "controllers/v2",
-    "config": "configs/onet-x-empty"
+    "config": "configs/onet-x-empty.json"
   }
 }
