@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "id": "ninja-hit",
   "templates": {
     "shoot-bubbles": {
@@ -45,7 +45,7 @@
       }
     },
      "jumper": {
-      "id": "",
+      "id": "335736217697217",
       "name": "Witch Jump",
       "icon": "https://i.imgur.com/HURqI0z.jpg",
       "banner": "https://i.imgur.com/BJNEdl1.png",
