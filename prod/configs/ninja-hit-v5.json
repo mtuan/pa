@@ -1,12 +1,12 @@
 {
-  "version": 9,
+  "version": 10,
   "id": "ninja-hit",
   "templates": {
      "egg-shoot": {
       "id": "2492644277420233",
-      "name": "Shoot Bubbles",
+      "name": "Egg Shoot",
       "icon": "https://i.imgur.com/IywfC4x.png",
-      "banner": "https://i.imgur.com/IvVcRBz.jpg",
+      "banner": "https://i.imgur.com/ZNoeOrR.png",
       "inter": {
         "image": "https://i.imgur.com/oiPwLMH.jpg",
         "play": {
@@ -21,7 +21,7 @@
       "id": "227788504726017",
       "name": "Shoot Bubbles",
       "icon": "https://i.imgur.com/cmA3MUO.png",
-      "banner": "https://i.imgur.com/ZNoeOrR.png",
+      "banner": "https://i.imgur.com/IvVcRBz.jpg",
       "inter": {
         "image": "https://i.imgur.com/6XQiVCi.jpg",
         "play": {
