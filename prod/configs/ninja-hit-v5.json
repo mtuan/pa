@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "id": "ninja-hit",
   "templates": {
      "egg-shoot": {
@@ -12,7 +12,7 @@
         "play": {
           "image": "https://i.imgur.com/DMkstbl.png",
           "x": 0,
-          "y": -355
+          "y": -120
         }
       }
     },
@@ -27,7 +27,7 @@
         "play": {
           "image": "https://i.imgur.com/4RLkhSq.png",
           "x": 0,
-          "y": -120
+          "y": -355
         }
       }
     },
