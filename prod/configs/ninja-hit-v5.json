@@ -97,7 +97,8 @@
   },
   "sets": {
     "default": {
-      "shoot-bubbles": 30,
+	    "egg-shoot":20,
+      "shoot-bubbles": 10,
       "onet-x": 10,
       "pair-matching": 10,
 	  "jumper": 50
