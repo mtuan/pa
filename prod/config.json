@@ -13,7 +13,7 @@
   },
   "ninja-hit-v2": {
     "controller": "controllers/v2",
-    "config": "configs/ninja-hit-v4.json"
+    "config": "configs/ninja-hit-v5.json"
   },
   "ninja-hit-test": {
     "controller": "controllers/v2",
