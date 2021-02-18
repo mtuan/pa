@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "id": "ninja-hit",
   "templates": {
      "egg-shoot": {
@@ -97,11 +97,11 @@
   },
   "sets": {
     "default": {
-	    "egg-shoot":20,
-      "shoot-bubbles": 10,
-      "onet-x": 10,
-      "pair-matching": 10,
-	  "jumper": 50
+	    "egg-shoot":80,
+      "shoot-bubbles": 5,
+      "onet-x": 5,
+      "pair-matching": 5,
+	  "jumper": 5
     }
   }
 }
