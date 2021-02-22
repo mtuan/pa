@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -22,7 +22,7 @@
       "icon": "https://i.imgur.com/CvzQRFF.png",
       "banner": "https://i.imgur.com/YcZBSK9.jpg",
       "inter": {
-        "image": "https://i.imgur.com/OnNdpq3.jpg",
+        "image": "https://i.imgur.com/UAqAhee.jpg",
         "play": {
           "image": "https://i.imgur.com/7sXays2.png",
           "x": 0,
