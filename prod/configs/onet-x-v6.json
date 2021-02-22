@@ -1,0 +1,57 @@
+{
+  "version": 15,
+  "id": "onet-x",
+  "templates": {
+   "egg-shoot": {
+      "id": "2492644277420233",
+      "name": "Egg Shoot",
+      "icon": "https://i.imgur.com/IywfC4x.png",
+      "banner": "https://i.imgur.com/ZNoeOrR.png",
+      "inter": {
+        "image": "https://i.imgur.com/oiPwLMH.jpg",
+        "play": {
+          "image": "https://i.imgur.com/DMkstbl.png",
+          "x": 0,
+          "y": -120
+        }
+      }
+    },
+	 "remove-one-part": {
+      "id": "3628445433936530",
+      "name": "Remove One Part",
+      "icon": "https://i.imgur.com/CvzQRFF.png",
+      "banner": "https://i.imgur.com/YcZBSK9.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/OnNdpq3.jpg",
+        "play": {
+          "image": "https://i.imgur.com/7sXays2.png",
+          "x": 0,
+          "y": -330
+        }
+      }
+    }
+
+	
+  },
+  "configs": {
+    "default": {
+      "no-inter": false,
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [2, 7, 12, 16, 20],
+
+      "no-banner": false,
+      "banner-show": 0.1,
+      "banner-click": 0.5
+    }
+  },
+  "sets": {
+    "default":{
+       
+     "egg-shoot":10,
+	 "remove-one-part": 90
+    }
+  },
+  "rules": {
+  }
+}
