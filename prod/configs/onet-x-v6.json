@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 17,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -29,8 +29,21 @@
           "y": -330
         }
       }
+    },
+	 "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+      "icon": "https://i.imgur.com/WCnXBJz.png",
+      "banner": "https://i.imgur.com/DJlueS9.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "play": {
+          "image": "https://i.imgur.com/iLqkACs.png",
+          "x": 0,
+          "y": -350
+        }
+      }
     }
-
 	
   },
   "configs": {
@@ -48,8 +61,9 @@
   "sets": {
     "default":{
        
-     "egg-shoot":10,
-	 "remove-one-part": 90
+     
+	 "remove-one-part": 70,
+	 "pair-matching" : 30
     }
   },
   "rules": {
