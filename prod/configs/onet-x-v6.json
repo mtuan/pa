@@ -1,5 +1,5 @@
 {
-  "version": 17,
+  "version": 18,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -43,8 +43,22 @@
           "y": -350
         }
       }
+    },
+	 "block-puzzle": {
+      "id": "1564585660390128",
+      "name": "Block Puzzle",
+      "icon": "https://i.imgur.com/rf91NNd.jpg",
+      "banner": "https://i.imgur.com/OfvmgPO.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/0ysX589.jpg",
+        "play": {
+          "image": "https://i.imgur.com/tJNKvzh.png",
+          "x": 0,
+          "y": -350
+        }
+      }
     }
-	
+
   },
   "configs": {
     "default": {
@@ -60,10 +74,8 @@
   },
   "sets": {
     "default":{
-       
-     
 	 "remove-one-part": 70,
-	 "pair-matching" : 30
+	 "block-puzzle" : 30
     }
   },
   "rules": {
