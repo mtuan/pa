@@ -22,7 +22,7 @@
       "name": "Remove One Part",
       "icon": "https://i.imgur.com/CvzQRFF.png",
       "banner": "https://i.imgur.com/YcZBSK9.jpg",
-      "video": "https://i.imgur.com/r9aZoxk.mp4",
+      "video": "https://i.imgur.com/gvfedkX.mp4",
       "inter": {
         "image": "https://i.imgur.com/UAqAhee.jpg",
         "play": {
@@ -37,7 +37,7 @@
       "name": "Pair Matching",
       "icon": "https://i.imgur.com/WCnXBJz.png",
       "banner": "https://i.imgur.com/DJlueS9.jpg",
-      "video": "https://i.imgur.com/3ND0AVQ.mp4",
+      "video": "https://i.imgur.com/rcLayWl.mp4",
       "inter": {
         "image": "https://i.imgur.com/Ix3oFZw.jpg",
         "play": {
@@ -78,8 +78,9 @@
   },
   "sets": {
     "default":{
-	 "remove-one-part": 70,
-	 "block-puzzle" : 30
+	 "remove-one-part": 30,
+	 "block-puzzle" : 40,
+   "pair-matching": 30
     }
   },
   "rules": {
