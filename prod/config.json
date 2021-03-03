@@ -26,5 +26,9 @@
   "onet-x-test": {
     "controller": "controllers/v2",
     "config": "configs/onet-x-v6.json"
+  },
+  "onet-x-v3": {
+    "controller": "controllers/v4",
+    "config": "configs/onet-x-v3test.json"
   }
 }
