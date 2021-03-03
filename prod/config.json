@@ -34,5 +34,5 @@
   "onet-x-v4": {
     "controller": "controllers/v5",
     "config": "configs/onet-x-v4test.json"
-  },
+  }
 }
