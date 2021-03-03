@@ -1,0 +1,87 @@
+{
+  "version": 22,
+  "id": "onet-x",
+  "templates": {
+   "egg-shoot": {
+      "id": "2492644277420233",
+      "name": "Egg Shoot",
+      "icon": "https://i.imgur.com/IywfC4x.png",
+      "banner": "https://i.imgur.com/ZNoeOrR.png",
+      "video": "https://i.imgur.com/3ND0AVQ.mp4",
+      "inter": {
+        "image": "https://i.imgur.com/oiPwLMH.jpg",
+        "play": {
+          "image": "https://i.imgur.com/DMkstbl.png",
+          "x": 0,
+          "y": -120
+        }
+      }
+    },
+	 "remove-one-part": {
+      "id": "3628445433936530",
+      "name": "Remove One Part",
+      "icon": "https://i.imgur.com/CvzQRFF.png",
+      "banner": "https://i.imgur.com/YcZBSK9.jpg",
+      "video": "https://i.imgur.com/gvfedkX.mp4",
+      "inter": {
+        "image": "https://i.imgur.com/UAqAhee.jpg",
+        "play": {
+          "image": "https://i.imgur.com/7sXays2.png",
+          "x": 0,
+          "y": -330
+        }
+      }
+    },
+	 "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+      "icon": "https://i.imgur.com/WCnXBJz.png",
+      "banner": "https://i.imgur.com/DJlueS9.jpg",
+      "video": "https://i.imgur.com/rcLayWl.mp4",
+      "inter": {
+        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "play": {
+          "image": "https://i.imgur.com/iLqkACs.png",
+          "x": 0,
+          "y": -350
+        }
+      }
+    },
+	 "block-puzzle": {
+      "id": "1564585660390128",
+      "name": "Block Puzzle",
+      "icon": "https://i.imgur.com/rf91NNd.jpg",
+      "banner": "https://i.imgur.com/OfvmgPO.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/0ysX589.jpg",
+        "play": {
+          "image": "https://i.imgur.com/tJNKvzh.png",
+          "x": 0,
+          "y": -350
+        }
+      }
+    }
+
+  },
+  "configs": {
+    "default": {
+      "no-inter": false,
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [2, 7, 12, 16, 20],
+
+      "no-banner": false,
+      "banner-show": 0.1,
+      "banner-click": 0.5
+    }
+  },
+  "sets": {
+    "default":{
+	 "remove-one-part": 30,
+	 "block-puzzle" : 40,
+   "pair-matching": 30
+    }
+  },
+  "rules": {
+  }
+}
