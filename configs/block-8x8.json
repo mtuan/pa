@@ -1,3 +1,4 @@
 {
-  "switch-mode-enabled": false
+  "switch-mode-enabled": true,
+  "reward-post-score": true
 }
