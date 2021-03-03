@@ -1,5 +1,5 @@
 {
-  "version": 20,
+  "version": 21,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -52,7 +52,6 @@
       "name": "Block Puzzle",
       "icon": "https://i.imgur.com/rf91NNd.jpg",
       "banner": "https://i.imgur.com/OfvmgPO.jpg",
-      "video": "https://i.imgur.com/3ND0AVQ.mp4",
       "inter": {
         "image": "https://i.imgur.com/0ysX589.jpg",
         "play": {
