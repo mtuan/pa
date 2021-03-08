@@ -7,7 +7,6 @@
       "name": "Egg Shoot",
       "icon": "https://i.imgur.com/IywfC4x.png",
       "banner": "https://i.imgur.com/ZNoeOrR.png",
-      "video": "https://i.imgur.com/3ND0AVQ.mp4",
       "inter": {
         "image": "https://i.imgur.com/oiPwLMH.jpg",
         "play": {
@@ -22,7 +21,7 @@
       "name": "Remove One Part",
       "icon": "https://i.imgur.com/CvzQRFF.png",
       "banner": "https://i.imgur.com/YcZBSK9.jpg",
-      "video": "https://i.imgur.com/gvfedkX.mp4",
+      "video": "https://i.imgur.com/E5cXR3Y.mp4",
       "inter": {
         "image": "https://i.imgur.com/UAqAhee.jpg",
         "play": {
@@ -37,7 +36,6 @@
       "name": "Pair Matching",
       "icon": "https://i.imgur.com/WCnXBJz.png",
       "banner": "https://i.imgur.com/DJlueS9.jpg",
-      "video": "https://i.imgur.com/rcLayWl.mp4",
       "inter": {
         "image": "https://i.imgur.com/Ix3oFZw.jpg",
         "play": {
@@ -77,9 +75,8 @@
   },
   "sets": {
     "default":{
-	 "remove-one-part": 30,
-	 "block-puzzle" : 40,
-   "pair-matching": 30
+	 "remove-one-part": 60,
+	 "block-puzzle" : 40
     }
   },
   "rules": {
