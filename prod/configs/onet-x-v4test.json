@@ -1,5 +1,5 @@
 {
-  "version": 23,
+  "version": 24,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -58,6 +58,20 @@
           "y": -350
         }
       }
+    },
+	  "block-puzzle88": {
+      "id": "3556676234461894",
+      "name": "Block Puzzle 8x8",
+      "icon": "https://i.imgur.com/PEovUhE.png",
+      "banner": "https://i.imgur.com/NjQCAYP.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/rz6ESAY.jpg",
+        "play": {
+          "image": "https://i.imgur.com/tJNKvzh.png",
+          "x": 0,
+          "y": -350
+        }
+      }
     }
 
   },
@@ -75,8 +89,8 @@
   },
   "sets": {
     "default":{
-	 "remove-one-part": 60,
-	 "block-puzzle" : 40
+	 "remove-one-part": 70,
+	 "block-puzzle88" : 30
     }
   },
   "rules": {
