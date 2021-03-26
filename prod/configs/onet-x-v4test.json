@@ -1,5 +1,5 @@
 {
-  "version": 24,
+  "version": 25,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -72,6 +72,36 @@
           "y": -350
         }
       }
+    },
+	"jumper": {
+      "id": "335736217697217",
+      "name": "Witch Jump",
+      "icon": "https://i.imgur.com/HURqI0z.jpg",
+	  
+      "banner": "https://i.imgur.com/BJNEdl1.png",
+      "inter": {
+        "image": "https://i.imgur.com/bwhkCDB.png",
+        "play": {
+          "image": "https://i.imgur.com/FFSD7AT.png",
+          "x": 0,
+          "y": -350
+        }
+      }
+    },
+	"sweet-party": {
+      "id": "1189050068162844",
+      "name": "Sweet Party",
+      "icon": "https://i.imgur.com/ml3JuZB.png",
+	  
+      "banner": "https://i.imgur.com/0phPnXq.png",
+      "inter": {
+        "image": "https://i.imgur.com/Tz8o9pt.png",
+        "play": {
+          "image": "https://i.imgur.com/DP4A22I.png",
+          "x": 0,
+          "y": -350
+        }
+      }
     }
 
   },
@@ -89,8 +119,10 @@
   },
   "sets": {
     "default":{
-	 "remove-one-part": 70,
-	 "block-puzzle88" : 30
+	 "remove-one-part": 60,
+	 "block-puzzle88" : 20,
+	 "jumper" : 10,
+	 "sweet-party" : 10
     }
   },
   "rules": {
