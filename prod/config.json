@@ -36,7 +36,7 @@
     "config": "configs/onet-x-v4test.json"
   },
    "pair-matching": {
-    "controller": "controllers/v5",
+    "controller": "controllers/v2",
     "config": "configs/pair-matching-v1.json"
   }
 }
