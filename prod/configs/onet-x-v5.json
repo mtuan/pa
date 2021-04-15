@@ -1,5 +1,5 @@
 {
-  "version": 27,
+  "version": 28,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -121,11 +121,9 @@
   },
   "sets": {
     "default":{
-	 "remove-one-part": 40,
+	 "remove-one-part": 60,
 	 "block-puzzle88" : 20,
-       "block-puzzle" : 20,
-	 "jumper" : 10,
-	 "sweet-party" : 10
+	 "sweet-party" : 20
     }
   },
   "rules": {
