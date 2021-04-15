@@ -1,5 +1,5 @@
 {
-  "version": 28,
+  "version": 29,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -27,7 +27,7 @@
         "play": {
           "image": "https://i.imgur.com/7sXays2.png",
           "x": 0,
-          "y": -300
+          "y": -280
         }
       }
     },
@@ -41,7 +41,7 @@
         "play": {
           "image": "https://i.imgur.com/iLqkACs.png",
           "x": 0,
-          "y": -300
+          "y": -280
         }
       }
     },
@@ -55,7 +55,7 @@
         "play": {
           "image": "https://i.imgur.com/tJNKvzh.png",
           "x": 0,
-          "y": -300
+          "y": -280
         }
       }
     },
@@ -69,7 +69,7 @@
         "play": {
           "image": "https://i.imgur.com/tJNKvzh.png",
           "x": 0,
-          "y": -300
+          "y": -280
         }
       }
     },
@@ -84,7 +84,7 @@
         "play": {
           "image": "https://i.imgur.com/FFSD7AT.png",
           "x": 0,
-          "y": -300
+          "y": -280
         }
       }
     },
@@ -99,7 +99,7 @@
         "play": {
           "image": "https://i.imgur.com/DP4A22I.png",
           "x": 0,
-          "y": -300
+          "y": -280
         }
       }
     }
