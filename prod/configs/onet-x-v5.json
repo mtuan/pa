@@ -1,5 +1,5 @@
 {
-  "version": 28,
+  "version": 30,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -27,7 +27,7 @@
         "play": {
           "image": "https://i.imgur.com/7sXays2.png",
           "x": 0,
-          "y": -330
+          "y": -280
         }
       }
     },
@@ -41,7 +41,7 @@
         "play": {
           "image": "https://i.imgur.com/iLqkACs.png",
           "x": 0,
-          "y": -350
+          "y": -280
         }
       }
     },
@@ -50,17 +50,31 @@
       "name": "Block Puzzle",
       "icon": "https://i.imgur.com/rf91NNd.jpg",
       "banner": "https://i.imgur.com/OfvmgPO.jpg",
-       "video" :"https://i.imgur.com/jBrF7ne.mp4",
       "inter": {
         "image": "https://i.imgur.com/0ysX589.jpg",
         "play": {
           "image": "https://i.imgur.com/tJNKvzh.png",
           "x": 0,
-          "y": -350
+          "y": -280
         }
       }
     },
 	  "block-puzzle88": {
+      "id": "3556676234461894",
+      "name": "Block Puzzle 8x8",
+      "icon": "https://i.imgur.com/PEovUhE.png",
+      "banner": "https://i.imgur.com/NjQCAYP.jpg",
+      "inter": {
+        "image": "https://i.imgur.com/rz6ESAY.jpg",
+        "play": {
+          "image": "https://i.imgur.com/tJNKvzh.png",
+          "x": 0,
+          "y": -280
+        }
+      }
+    },
+	
+	 "block-puzzle88video": {
       "id": "3556676234461894",
       "name": "Block Puzzle 8x8",
       "icon": "https://i.imgur.com/PEovUhE.png",
@@ -71,10 +85,11 @@
         "play": {
           "image": "https://i.imgur.com/tJNKvzh.png",
           "x": 0,
-          "y": -350
+          "y": -280
         }
       }
     },
+	
 	"jumper": {
       "id": "335736217697217",
       "name": "Witch Jump",
@@ -86,7 +101,7 @@
         "play": {
           "image": "https://i.imgur.com/FFSD7AT.png",
           "x": 0,
-          "y": -350
+          "y": -280
         }
       }
     },
@@ -101,7 +116,7 @@
         "play": {
           "image": "https://i.imgur.com/DP4A22I.png",
           "x": 0,
-          "y": -350
+          "y": -280
         }
       }
     }
@@ -122,7 +137,8 @@
   "sets": {
     "default":{
 	 "remove-one-part": 60,
-	 "block-puzzle88" : 20,
+	 "block-puzzle88" : 10,
+	 "block-puzzle88video" : 10,
 	 "sweet-party" : 20
     }
   },
