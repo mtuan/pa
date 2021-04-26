@@ -2,7 +2,7 @@
   "version": 0,
   "id": "onet-x",
   "templates": {
-	 "remove-one-part": {
+    "remove-one-part": {
       "id": "3628445433936530",
       "name": "Remove One Part",
       "icon": "https://i.imgur.com/CvzQRFF.png",
@@ -22,7 +22,7 @@
         "label_color": "#ecb39c"
       }
     },
-	  "block-puzzle88": {
+    "block-puzzle88": {
       "id": "3556676234461894",
       "name": "Block Puzzle 8x8",
       "icon": "https://i.imgur.com/PEovUhE.png",
