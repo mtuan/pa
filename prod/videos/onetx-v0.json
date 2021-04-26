@@ -1,0 +1,65 @@
+{
+  "version": 0,
+  "id": "onet-x",
+  "templates": {
+	 "remove-one-part": {
+      "id": "3628445433936530",
+      "name": "Remove One Part",
+      "icon": "https://i.imgur.com/CvzQRFF.png",
+      "inter": {
+        "bg_color": "#FFFFFF",
+        "bg_image": "https://i.imgur.com/LBkSgu9.png",
+        "header": "https://i.imgur.com/ZqTo1yJ.png",
+        "footer": "https://i.imgur.com/WRARZFY.png",
+        "video": "https://i.imgur.com/uc0fVk9.mp4",
+        "close": {
+          "image": "https://i.imgur.com/nAvuPh1.png"
+        }
+      },
+      "scroll": {
+        "image": "https://i.imgur.com/pHbui1Q.png",
+        "border": "https://i.imgur.com/17NKCb0.png",
+        "label_color": "#ecb39c"
+      }
+    },
+	  "block-puzzle88": {
+      "id": "3556676234461894",
+      "name": "Block Puzzle 8x8",
+      "icon": "https://i.imgur.com/PEovUhE.png",
+      "inter": {
+        "bg_color": "#000000",
+        "bg_image": "https://i.imgur.com/LBkSgu9.png",
+        "header": "https://i.imgur.com/UgKVirs.png",
+        "footer": "https://i.imgur.com/1HfWaDl.png",
+        "video": "https://i.imgur.com/RDSANuy.mp4",
+        "close": {
+          "image": "https://i.imgur.com/xhukvB0.png"
+        }
+      },
+      "scroll": {
+        "image": "https://i.imgur.com/CQPgXiK.png",
+        "label_color": "#3cc8c7"
+      }
+    },
+    "galaxy-attack": {
+      "id": "545660589189320",
+      "name": "Galaxy Attack",
+      "icon": "https://i.imgur.com/OacYEm3.png",
+      "inter": {
+        "bg_color": "#FFFFFF",
+        "bg_image": "https://i.imgur.com/fJpipuD.png",
+        "header": "https://i.imgur.com/C6dy3C5.png",
+        "footer": "https://i.imgur.com/m44sNBJ.png",
+        "video": "https://i.imgur.com/Dt3ikoc.mp4",
+        "close": {
+          "image": "https://i.imgur.com/8nxumAy.png"
+        }
+      },
+      "scroll": {
+        "image": "https://i.imgur.com/YedHh7F.png",
+        "border": "https://i.imgur.com/g8v73GQ.png",
+        "label_color": "#70beef"
+      }
+    }
+  }
+}
