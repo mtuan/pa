@@ -6,12 +6,13 @@
       "id": "3628445433936530",
       "name": "Remove One Part",
       "icon": "https://i.imgur.com/CvzQRFF.png",
+      "icon_video": "https://i.imgur.com/DYp9sK8.mp4",
       "inter": {
         "bg_color": "#FFFFFF",
         "bg_image": "https://i.imgur.com/LBkSgu9.png",
         "header": "https://i.imgur.com/ZqTo1yJ.png",
         "footer": "https://i.imgur.com/WRARZFY.png",
-        "video": "https://i.imgur.com/uc0fVk9.mp4",
+        "video": "https://i.imgur.com/sioejnU.mp4",
         "close": {
           "image": "https://i.imgur.com/nAvuPh1.png"
         }
@@ -26,12 +27,13 @@
       "id": "3556676234461894",
       "name": "Block Puzzle 8x8",
       "icon": "https://i.imgur.com/PEovUhE.png",
+      "icon_video": "https://i.imgur.com/1DFdTYB.mp4",
       "inter": {
         "bg_color": "#000000",
         "bg_image": "https://i.imgur.com/LBkSgu9.png",
         "header": "https://i.imgur.com/UgKVirs.png",
         "footer": "https://i.imgur.com/1HfWaDl.png",
-        "video": "https://i.imgur.com/RDSANuy.mp4",
+        "video": "https://i.imgur.com/krWc3kv.mp4",
         "close": {
           "image": "https://i.imgur.com/xhukvB0.png"
         }
@@ -45,12 +47,13 @@
       "id": "545660589189320",
       "name": "Galaxy Attack",
       "icon": "https://i.imgur.com/OacYEm3.png",
+      "icon_video": "https://i.imgur.com/Mkh9nOO.mp4",
       "inter": {
         "bg_color": "#FFFFFF",
         "bg_image": "https://i.imgur.com/fJpipuD.png",
         "header": "https://i.imgur.com/C6dy3C5.png",
         "footer": "https://i.imgur.com/m44sNBJ.png",
-        "video": "https://i.imgur.com/Dt3ikoc.mp4",
+        "video": "https://i.imgur.com/LI1B4g2.mp4",
         "close": {
           "image": "https://i.imgur.com/8nxumAy.png"
         }
