@@ -1,5 +1,5 @@
 {
-  "version": 0,
+  "version": 1,
   "id": "onet-x",
   "templates": {
     "remove-one-part": {
@@ -41,27 +41,6 @@
       "scroll": {
         "image": "https://i.imgur.com/CQPgXiK.png",
         "label_color": "#3cc8c7"
-      }
-    },
-    "galaxy-attack": {
-      "id": "545660589189320",
-      "name": "Galaxy Attack",
-      "icon": "https://i.imgur.com/OacYEm3.png",
-      "icon_video": "https://i.imgur.com/Mkh9nOO.mp4",
-      "inter": {
-        "bg_color": "#FFFFFF",
-        "bg_image": "https://i.imgur.com/fJpipuD.png",
-        "header": "https://i.imgur.com/C6dy3C5.png",
-        "footer": "https://i.imgur.com/m44sNBJ.png",
-        "video": "https://i.imgur.com/LI1B4g2.mp4",
-        "close": {
-          "image": "https://i.imgur.com/8nxumAy.png"
-        }
-      },
-      "scroll": {
-        "image": "https://i.imgur.com/YedHh7F.png",
-        "border": "https://i.imgur.com/g8v73GQ.png",
-        "label_color": "#70beef"
       }
     }
   }
