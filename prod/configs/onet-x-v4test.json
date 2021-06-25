@@ -1,31 +1,31 @@
 {
-  "version": 33,
+  "version": 34,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
       "id": "2492644277420233",
       "name": "Egg Shoot",
-      "icon": "https://i.imgur.com/IywfC4x.png",
-      "banner": "https://i.imgur.com/ZNoeOrR.png",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/image/icon200square.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/image/banner-egg.png",
       "inter": {
-        "image": "https://i.imgur.com/oiPwLMH.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/image/screenshoot.png",
         "play": {
-          "image": "https://i.imgur.com/DMkstbl.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/image/Play-now.png",
           "x": 0,
-          "y": -120
+          "y": -250
         }
       }
     },
 	 "remove-one-part": {
       "id": "3628445433936530",
       "name": "Remove One Part",
-      "icon": "https://i.imgur.com/CvzQRFF.png",
-      "banner": "https://i.imgur.com/YcZBSK9.jpg",
-      "video": "https://i.imgur.com/E5cXR3Y.mp4",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/remove-one/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/remove-one/banner.png",
+      "video": "https://d2o6025edec3m1.cloudfront.net/remove-one/video.mp4",
       "inter": {
-        "image": "https://i.imgur.com/UAqAhee.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/remove-one/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/7sXays2.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/remove-one/button.png",
           "x": 0,
           "y": -250
         }
@@ -34,26 +34,27 @@
 	 "pair-matching": {
       "id": "190367968913670",
       "name": "Pair Matching",
-      "icon": "https://i.imgur.com/WCnXBJz.png",
-      "banner": "https://i.imgur.com/DJlueS9.jpg",
+	   "icon": "https://d2o6025edec3m1.cloudfront.net/pair-matching/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/pair-matching/banner.png",
       "inter": {
-        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/pair-matching/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/iLqkACs.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/pair-matching/button.png",
           "x": 0,
-          "y": -250
+          "y": -300
         }
       }
+	  
     },
 	 "block-puzzle": {
       "id": "1564585660390128",
       "name": "Block Puzzle",
-      "icon": "https://i.imgur.com/rf91NNd.jpg",
-      "banner": "https://i.imgur.com/OfvmgPO.jpg",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/banner.jpg",
       "inter": {
-        "image": "https://i.imgur.com/0ysX589.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/tJNKvzh.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
           "x": 0,
           "y": -250
         }
@@ -62,61 +63,30 @@
 	 "block-puzzle88video": {
       "id": "3556676234461894",
       "name": "Block Puzzle 8x8",
-      "icon": "https://i.imgur.com/PEovUhE.png",
-      "banner": "https://i.imgur.com/NjQCAYP.jpg",
-      "video" :"https://i.imgur.com/jBrF7ne.mp4",
+       "icon": "https://d2o6025edec3m1.cloudfront.net/block88/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/block88/banner.jpg",
+      "video" :"https://d2o6025edec3m1.cloudfront.net/block88/video.mp4",
       "inter": {
-        "image": "https://i.imgur.com/rz6ESAY.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/tJNKvzh.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
           "x": 0,
           "y": -250
         }
       }
     },
-	
-	"jumper": {
-      "id": "335736217697217",
-      "name": "Witch Jump",
-      "icon": "https://i.imgur.com/HURqI0z.jpg",
-	  
-      "banner": "https://i.imgur.com/BJNEdl1.png",
-      "inter": {
-        "image": "https://i.imgur.com/bwhkCDB.png",
-        "play": {
-          "image": "https://i.imgur.com/FFSD7AT.png",
-          "x": 0,
-          "y": -250
-        }
-      }
-    },
-	"sweet-party": {
-      "id": "1189050068162844",
-      "name": "Sweet Party",
-      "icon": "https://i.imgur.com/ml3JuZB.png",
-	  
-      "banner": "https://i.imgur.com/0phPnXq.png",
-      "inter": {
-        "image": "https://i.imgur.com/Tz8o9pt.png",
-        "play": {
-          "image": "https://i.imgur.com/DP4A22I.png",
-          "x": 0,
-          "y": -250
-        }
-      }
-    },
+
 	"number-bubble": {
-      "id": "134374228549110",
-      "name": "Number Shoot",
-      "icon": "https://i.imgur.com/xcf8TBs.png",
-	  
-      "banner": "https://i.imgur.com/8Om8kCL.png",
+       "id": "134374228549110",
+      "name": "Number Bubbles Shoot",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/numbershoot/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/numbershoot/banner.png",
       "inter": {
-        "image": "https://i.imgur.com/ho59OBu.png",
+        "image": "https://d2o6025edec3m1.cloudfront.net/numbershoot/vec_screen.png",
         "play": {
-          "image": "https://i.imgur.com/kO7QKvD.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/numbershoot/button.png",
           "x": 0,
-          "y": -250
+          "y": -300
         }
       }
     }
