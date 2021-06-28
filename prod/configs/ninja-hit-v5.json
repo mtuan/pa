@@ -1,18 +1,18 @@
 {
-  "version": 12,
+  "version": 13,
   "id": "ninja-hit",
   "templates": {
      "egg-shoot": {
       "id": "2492644277420233",
       "name": "Egg Shoot",
-      "icon": "https://i.imgur.com/IywfC4x.png",
-      "banner": "https://i.imgur.com/ZNoeOrR.png",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/image/icon200square.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/image/banner-egg.png",
       "inter": {
-        "image": "https://i.imgur.com/oiPwLMH.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/image/screenshoot.png",
         "play": {
-          "image": "https://i.imgur.com/DMkstbl.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/image/Play-now.png",
           "x": 0,
-          "y": -120
+          "y": -250
         }
       }
     },
@@ -20,40 +20,40 @@
     "shoot-bubbles": {
       "id": "227788504726017",
       "name": "Shoot Bubbles",
-      "icon": "https://i.imgur.com/cmA3MUO.png",
-      "banner": "https://i.imgur.com/IvVcRBz.jpg",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/icon200.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/banner.jpg",
       "inter": {
-        "image": "https://i.imgur.com/6XQiVCi.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/splash-screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/4RLkhSq.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/Play-now.png",
           "x": 0,
-          "y": -355
+          "y": -300
         }
       }
     },
     "onet-x": {
       "id": "220801932630391",
       "name": "OnetX Connect Animals",
-      "icon": "https://i.imgur.com/dJvBPAO.jpg",
-      "banner": "https://i.imgur.com/cg0Jp4Q.png",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/banner.jpg",
       "inter": {
-        "image": "https://i.imgur.com/LKtatmr.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/vec_screen.png",
         "play": {
-          "image": "https://i.imgur.com/9OMHvPp.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/button.png",
           "x": 0,
-          "y": -275
+          "y": -300
         }
       }
     },
     "pair-matching": {
       "id": "190367968913670",
       "name": "Pair Matching",
-      "icon": "https://i.imgur.com/WCnXBJz.png",
-      "banner": "https://i.imgur.com/DJlueS9.jpg",
+        "icon": "https://d2o6025edec3m1.cloudfront.net/pair-matching/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/pair-matching/banner.png",
       "inter": {
-        "image": "https://i.imgur.com/Ix3oFZw.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/pair-matching/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/iLqkACs.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/pair-matching/button.png",
           "x": 0,
           "y": -300
         }
@@ -62,12 +62,12 @@
      "jumper": {
       "id": "335736217697217",
       "name": "Witch Jump",
-      "icon": "https://i.imgur.com/HURqI0z.jpg",
-      "banner": "https://i.imgur.com/BJNEdl1.png",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/witch-jump/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/witch-jump/banner.png",
       "inter": {
-        "image": "https://i.imgur.com/bwhkCDB.png",
+        "image": "https://d2o6025edec3m1.cloudfront.net/witch-jump/vec_screen.png",
         "play": {
-          "image": "https://i.imgur.com/FFSD7AT.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/witch-jump/button.png",
           "x": 0,
           "y": -360
         }
