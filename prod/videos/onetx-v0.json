@@ -1,45 +1,45 @@
 {
-  "version": 2,
+  "version": 3,
   "id": "onet-x",
   "templates": {
 	 "remove-one-part": {
       "id": "3628445433936530",
       "name": "Remove One Part",
-      "icon": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/icon.png",
-      "icon_video": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/icon_video.mp4",
+      "icon": "https://i.imgur.com/U1uoIOo.png",
+      "icon_video": "https://i.imgur.com/WB1mzWc.mp4",
       "inter": {
         "bg_color": "#FFFFFF",
-        "bg_image": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/inter/bg_image.png",
-        "header": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/inter/header.png",
-        "footer": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/inter/footer.png",
-        "video": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/inter/video.mp4",
+        "bg_image": "https://i.imgur.com/AU72oI7.png",
+        "header": "https://i.imgur.com/pUKJRME.png",
+        "footer": "https://i.imgur.com/m0ygiWP.png",
+        "video": "https://i.imgur.com/s84tTHo.mp4",
         "close": {
-          "image": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/inter/close_image.png"
+          "image": "https://i.imgur.com/zPQneYf.png"
         }
       },
       "scroll": {
-        "image": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/scroll/image.png",
-        "border": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/DOP/scroll/border.png",
+        "image": "https://i.imgur.com/aTp9IM6.png",
+        "border": "https://i.imgur.com/DGxZQIy.png",
         "label_color": "#ecb39c"
       }
     },
 	  "block-puzzle88": {
       "id": "3556676234461894",
       "name": "Block Puzzle 8x8",
-      "icon": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/icon.png",
-      "icon_video": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/icon_video.mp4",
+      "icon": "https://i.imgur.com/SlMZ3Ff.png",
+      "icon_video": "https://i.imgur.com/EhD8pjB.mp4",
       "inter": {
         "bg_color": "#000000",
-        "bg_image": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/inter/bg_image.png",
-        "header": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/inter/header.png",
-        "footer": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/inter/footer.png",
-        "video": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/inter/video.mp4",
+        "bg_image": "https://i.imgur.com/AU72oI7.png",
+        "header": "https://i.imgur.com/aPiX7xi.png",
+        "footer": "https://i.imgur.com/DhNvSav.png",
+        "video": "https://i.imgur.com/pilk6pi.mp4",
         "close": {
-          "image": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/inter/close_image.png"
+          "image": "https://i.imgur.com/BO24x8O.png"
         }
       },
       "scroll": {
-        "image": "https://d2o6025edec3m1.cloudfront.net/MultiPushApp/Block88/scroll/image.png",
+        "image": "https://i.imgur.com/22w0TNk.png",
         "label_color": "#3cc8c7"
       }
     }
