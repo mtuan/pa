@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "id": "ninja-hit",
   "templates": {
      "egg-shoot": {
@@ -10,7 +10,7 @@
       "inter": {
         "image": "https://d2o6025edec3m1.cloudfront.net/image/screenshoot.png",
         "play": {
-          "image": "https://d2o6025edec3m1.cloudfront.net/image/Play-now.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/image/button_small.png",
           "x": 0,
           "y": -250
         }
@@ -34,12 +34,12 @@
     "onet-x": {
       "id": "220801932630391",
       "name": "OnetX Connect Animals",
-      "icon": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/icon.png",
-      "banner": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/banner.jpg",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/onetx/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/onetx/banner.png",
       "inter": {
-        "image": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/vec_screen.png",
+        "image": "https://d2o6025edec3m1.cloudfront.net/onetx/vec_screen.jpg",
         "play": {
-          "image": "https://d2o6025edec3m1.cloudfront.net/onet-conectAnimal/button.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/onetx/button.png",
           "x": 0,
           "y": -300
         }
