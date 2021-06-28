@@ -1,31 +1,32 @@
 {
-  "version": 21,
+  "version": 22,
   "id": "pair-matching",
   "templates": {
-   "egg-shoot": {
+        "egg-shoot": {
       "id": "2492644277420233",
       "name": "Egg Shoot",
-      "icon": "https://i.imgur.com/IywfC4x.png",
-      "banner": "https://i.imgur.com/ZNoeOrR.png",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/image/icon200square.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/image/banner-egg.png",
       "inter": {
-        "image": "https://i.imgur.com/oiPwLMH.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/image/screenshoot.png",
         "play": {
-          "image": "https://i.imgur.com/DMkstbl.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/image/button.png",
           "x": 0,
-          "y": -120
+          "y": -200
         }
       }
     },
+  
 	 "remove-one-part": {
       "id": "3628445433936530",
       "name": "Remove One Part",
-      "icon": "https://i.imgur.com/CvzQRFF.png",
-      "banner": "https://i.imgur.com/YcZBSK9.jpg",
-	"video": "https://i.imgur.com/E5cXR3Y.mp4",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/remove-one/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/remove-one/banner.png",
+	  "video": "https://d2o6025edec3m1.cloudfront.net/remove-one/video.mp4",
       "inter": {
-        "image": "https://i.imgur.com/UAqAhee.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/remove-one/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/7sXays2.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/remove-one/button.png",
           "x": 0,
           "y": -330
         }
@@ -34,12 +35,12 @@
 	 "block-puzzle": {
       "id": "1564585660390128",
       "name": "Block Puzzle",
-      "icon": "https://i.imgur.com/rf91NNd.jpg",
-      "banner": "https://i.imgur.com/OfvmgPO.jpg",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/banner.jpg",
       "inter": {
-        "image": "https://i.imgur.com/0ysX589.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/tJNKvzh.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
           "x": 0,
           "y": -350
         }
@@ -48,12 +49,12 @@
     "block-puzzle88": {
       "id": "3556676234461894",
       "name": "Block Puzzle 8x8",
-      "icon": "https://i.imgur.com/PEovUhE.png",
-      "banner": "https://i.imgur.com/NjQCAYP.jpg",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/block88/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/block88/banner.jpg",
       "inter": {
-        "image": "https://i.imgur.com/rz6ESAY.jpg",
+        "image": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
         "play": {
-          "image": "https://i.imgur.com/tJNKvzh.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
           "x": 0,
           "y": -350
         }
@@ -62,13 +63,13 @@
 	"jumper": {
       "id": "335736217697217",
       "name": "Witch Jump",
-      "icon": "https://i.imgur.com/HURqI0z.jpg",
+        "icon":"https://d2o6025edec3m1.cloudfront.net/witch-jump/icon.jpg",
 	  
-      "banner": "https://i.imgur.com/BJNEdl1.png",
+      "banner":"https://d2o6025edec3m1.cloudfront.net/witch-jump/banner.png",
       "inter": {
-        "image": "https://i.imgur.com/bwhkCDB.png",
+        "image": "https://d2o6025edec3m1.cloudfront.net/witch-jump/vec_screen.png",
         "play": {
-          "image": "https://i.imgur.com/FFSD7AT.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/witch-jump/button.png",
           "x": 0,
           "y": -350
         }
@@ -77,13 +78,13 @@
 	"sweet-party": {
       "id": "1189050068162844",
       "name": "Sweet Party",
-      "icon": "https://i.imgur.com/ml3JuZB.png",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/sweet-party/icon.png",
 	  
-      "banner": "https://i.imgur.com/0phPnXq.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/sweet-party/banner.png",
       "inter": {
-        "image": "https://i.imgur.com/Tz8o9pt.png",
+        "image": "https://d2o6025edec3m1.cloudfront.net/sweet-party/vec_screen.png",
         "play": {
-          "image": "https://i.imgur.com/DP4A22I.png",
+          "image": "https://d2o6025edec3m1.cloudfront.net/sweet-party/button.png",
           "x": 0,
           "y": -350
         }
