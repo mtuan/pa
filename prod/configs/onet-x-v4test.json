@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -12,7 +12,7 @@
         "play": {
           "image": "https://d2o6025edec3m1.cloudfront.net/image/Play-now.png",
           "x": 0,
-          "y": -250
+          "y": -200
         }
       }
     },
@@ -105,19 +105,19 @@
     }
   },
   "sets": {
-    "default":{
+    "test":{
 	 "block-puzzle": 20,
 	 "remove-one-part": 40,
 	 "block-puzzle88video" : 20,
 	 "number-bubble": 20
     },
-	  "test": {
+	  "default": {
 		  "egg-shoot" : 100
 	  }
   },
   "rules": {
 	   "test": {
-      "user": ["3249848621735635"]
+      "user": ["3249848621735635000"]
     }
   }
 }
