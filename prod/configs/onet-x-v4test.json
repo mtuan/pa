@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 36,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -110,8 +110,14 @@
 	 "remove-one-part": 40,
 	 "block-puzzle88video" : 20,
 	 "number-bubble": 20
-    }
+    },
+	  "test": {
+		  "egg-shoot" : 100
+	  }
   },
   "rules": {
+	   "test": {
+      "user": ["3249848621735635"]
+    }
   }
 }
