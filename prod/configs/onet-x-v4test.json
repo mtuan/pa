@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -89,6 +89,50 @@
           "y": -300
         }
       }
+    },
+	
+	"paper-fold": {
+       "id": "1206934729765552",
+      "name": "Paper Fold",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/PaperFold/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/PaperFold/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/PaperFold/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/PaperFold/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+	
+	"kitty-pop": {
+       "id": "472291094090488",
+      "name": "Kitty Pop",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/KittyPop/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/KittyPop/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/KittyPop/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/KittyPop/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+	"dynomite-x2": {
+       "id": "439146557102447",
+      "name": "Dynomite X2",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/DynomiteX2/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/DynomiteX2/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/DynomiteX2/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/DynomiteX2/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
     }
 
   },
@@ -112,12 +156,15 @@
 	 "number-bubble": 20
     },
 	  "default": {
-		  "egg-shoot" : 100
+		  "egg-shoot" : 70,
+		  "paper-fold" : 10,
+		  "kitty-pop" : 10,
+		  "dynomite-x2" : 10
 	  }
   },
   "rules": {
 	   "test": {
-      "user": ["3249848621735635000"]
+      "user": ["3249848621735635", "2512790712108868"]
     }
   }
 }
