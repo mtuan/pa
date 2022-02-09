@@ -1,5 +1,5 @@
 {
-  "version": 40,
+  "version": 41,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -133,7 +133,25 @@
           "y": -300
         }
       }
+    },
+	"solitaire": {
+       "id": "391164092398938",
+      "name": "Solitaire Streak",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/Solitaire/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/Solitaire/banner.png",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/Solitaire/vec_screen.png",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/Solitaire/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
     }
+	
+	
+	
+	
 
   },
   "configs": {
@@ -150,10 +168,10 @@
   },
   "sets": {
     "test":{
-	 "block-puzzle": 20,
-	 "remove-one-part": 40,
-	 "block-puzzle88video" : 20,
-	 "number-bubble": 20
+	  "egg-shoot" : 50,
+	  "paper-fold" : 10,
+	  "dynomite-x2" : 10,
+	  "solitaire": 30
     },
 	  "default": {
 		  "egg-shoot" : 70,
@@ -164,7 +182,7 @@
   },
   "rules": {
 	   "test": {
-      "user": ["32498486217356350", "25127907121088680"]
+      "user": ["3249848621735635", "2512790712108868"]
     }
   }
 }
