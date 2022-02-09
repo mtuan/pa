@@ -1,5 +1,5 @@
 {
-  "version": 43,
+  "version": 44,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -174,15 +174,15 @@
 	  "solitaire": 30
     },
 	  "default": {
-		  "egg-shoot" : 70,
-		  "paper-fold" : 10,
-		  "kitty-pop" : 10,
-		  "dynomite-x2" : 10
+		   "egg-shoot" : 50,
+	  "paper-fold" : 10,
+	  "dynomite-x2" : 10,
+	  "solitaire": 30
 	  }
   },
   "rules": {
 	   "test": {
-      "user": ["3249848621735635", "2512790712108868", "4383622438317335", "6079939052078180"]
+      "user": ["32498486217356350", "25127907121088680", "43836224383173350", "60799390520781800"]
     }
   }
 }
