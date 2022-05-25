@@ -1,0 +1,116 @@
+{
+    "assets": {
+        "gameUrl": "https://d2o6025edec3m1.cloudfront.net/push-apps/assets/games",
+        "iconUrl": "https://d2o6025edec3m1.cloudfront.net/push-apps/assets/catalogs"
+    },
+    "games": {
+        "swap": {
+            "id": "913748129285913"
+        },
+        "basket": {
+            "id": "1224362211248752"
+        },
+        "block8": {
+            "id": "3556676234461894"
+        },
+        "block10": {
+            "id": "1564585660390128"
+        },
+        "block9": {
+            "id": "914791739354749"
+        },
+        "candy": {
+            "id": "3280083422063465"
+        },
+        "colorlink": {
+            "id": "529117187574163"
+        },
+        "water-sort": {
+            "id": "2905924186289424"
+        },
+        "dop": {
+            "id": "4036772439678656"
+        },
+        "egg-shoot1": {
+            "id": "2492644277420233"
+        },
+        "egg-shoot2": {
+            "id": "439146557102447"
+        },
+        "emoji": {
+            "id": "1758443634509607"
+        },
+        "alien": {
+            "id": "545660589189320"
+        },
+        "jumping-ball": {
+            "id": "2480929332051938"
+        },
+        "jumping-girl": {
+            "id": "347909499499999"
+        },
+        "kitty": {
+            "id": "472291094090488"
+        },
+        "line": {
+            "id": "498866996936248"
+        },
+        "ninja": {
+            "id": "634974810429385",
+            "settings": "ninja.v1.json"
+        },
+        "number-shoot": {
+            "id": "134374228549110"
+        },
+        "pair2d": {
+            "id": "190367968913670"
+        },
+        "onet": {
+            "id": "1043181865796678"
+        },
+        "onetx": {
+            "id": "220801932630391",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/onetx/banner.png",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/onetx/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/onetx/button.png",
+            "playY": -275
+        },
+        "pair3d": {
+            "id": "930637651046783"
+        },
+        "paper": {
+            "id": "1206934729765552"
+        },
+        "popus": {
+            "id": "166365298923895"
+        },
+        "rop": {
+            "id": "3628445433936530"
+        },
+        "bubble2": {
+            "id": "562551901626528"
+        },
+        "bubble3": {
+            "id": "3203372379949232"
+        },
+        "bubble1": {
+            "id": "227788504726017",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/screenshoot.png",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/button.png",
+            "playY": -355
+        },
+        "tripeaks": {
+            "id": "391164092398938"
+        },
+        "sweet-party": {
+            "id": "1189050068162844"
+        },
+        "witch-jump": {
+            "id": "335736217697217"
+        },
+        "wow": {
+            "id": "376121947435129"
+        }
+    }
+}
