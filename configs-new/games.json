@@ -32,7 +32,11 @@
             "id": "4036772439678656"
         },
         "egg-shoot1": {
-            "id": "2492644277420233"
+            "id": "2492644277420233",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/image/banner-egg.png",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/image/screenshoot.png",
+            "play": "https://d2o6025edec3m1.cloudfront.net/image/button.png",
+            "playY": -80
         },
         "egg-shoot2": {
             "id": "439146557102447"
@@ -89,17 +93,25 @@
             "id": "3628445433936530"
         },
         "bubble2": {
-            "id": "562551901626528"
+            "id": "562551901626528",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/button.png",
+            "playY": -275
         },
         "bubble3": {
-            "id": "3203372379949232"
+            "id": "3203372379949232",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble3/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble3/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubble3/button.png",
+            "playY": -275
         },
         "bubble1": {
             "id": "227788504726017",
             "banner": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/banner.jpg",
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/screenshoot.png",
             "play": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/button.png",
-            "playY": -355
+            "playY": -275
         },
         "tripeaks": {
             "id": "391164092398938"
