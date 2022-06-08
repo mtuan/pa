@@ -11,19 +11,32 @@
             "id": "1224362211248752"
         },
         "block8": {
-            "id": "3556676234461894"
+            "id": "3556676234461894",
+            "settings": "block8.v1.json"
         },
         "block10": {
-            "id": "1564585660390128"
+            "id": "1564585660390128",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
+            "playY": -468
         },
         "block9": {
-            "id": "914791739354749"
+            "id": "914791739354749",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/block9/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/block9/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/block9/button.png",
+            "playY": -300
         },
         "candy": {
             "id": "3280083422063465"
         },
         "colorlink": {
-            "id": "529117187574163"
+            "id": "529117187574163",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/color-link/banner.png",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/color-link/vec_screen.png",
+            "play": "https://d2o6025edec3m1.cloudfront.net/color-link/button.png",
+            "playY": -67
         },
         "water-sort": {
             "id": "2905924186289424"
