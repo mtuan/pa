@@ -1,6 +1,6 @@
 {
     "pa": {
-        "version": 1,
+        "version": 2,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
@@ -21,6 +21,7 @@
                 "1": [
                     "block8",
                     "block10",
+                    "block10-2",
                     "onetx",
                     "bubble1"
                 ],
@@ -39,9 +40,10 @@
         "distributions": {
             "all": {
                 "rates": {
-                    "block10": 50,
+                    "block10": 25,
+                    "colorlink": 10,
                     "block9": 25,
-                    "colorlink": 25
+                    "block10-2": 40
                 }
             }
         }

@@ -1,6 +1,6 @@
 {
     "pa": {
-        "version": 2,
+        "version": 3,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
@@ -11,6 +11,7 @@
             "clickRate": 0.5
         },
         "catalog": {
+            "excludeTrackings": true,
             "orders": {
                 "0": [
                     "bubble3",
@@ -19,7 +20,8 @@
                 "1": [
                     "egg-shoot1",
                     "onetx",
-                    "bubble1"
+                    "bubble1",
+                    "block10-2"
                 ],
                 "2": [
                     "tripeaks",
@@ -38,10 +40,10 @@
         "distributions": {
             "all": {
                 "rates": {
-                    "egg-shoot1": 25,
-                    "bubble1": 25,
-                    "bubble2": 25,
-                    "bubble3": 25
+                    "egg-shoot1": 20,
+                    "bubble1": 20,
+                    "bubble2": 20,
+                    "block10-2": 40
                 }
             }
         }
