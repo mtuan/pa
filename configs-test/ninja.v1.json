@@ -11,12 +11,14 @@
             "clickRate": 0.5
         },
         "catalog": {
+            "excludeTrackings": true,
             "orders": {
                 "0": [
                     "bubble3",
                     "bubble2"
                 ],
                 "1": [
+                    "block10-2",
                     "egg-shoot1",
                     "onetx",
                     "bubble1"
