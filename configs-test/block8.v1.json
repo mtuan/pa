@@ -1,6 +1,6 @@
 {
     "pa": {
-        "version": 1,
+        "version": 2,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
