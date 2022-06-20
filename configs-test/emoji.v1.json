@@ -1,6 +1,6 @@
 {
     "pa": {
-        "version": 2,
+        "version": 3,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
@@ -38,10 +38,10 @@
         "distributions": {
             "all": {
                 "rates": {
-                    "egg-shoot1": 25,
-                    "bubble1": 25,
-                    "bubble2": 25,
-                    "bubble3": 25
+                    "egg-shoot1": 20,
+                    "bubble1": 20,
+                    "bubble2": 20,
+                    "block10-2": 40
                 }
             }
         }

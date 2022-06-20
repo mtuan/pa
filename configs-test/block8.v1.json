@@ -39,9 +39,10 @@
         "distributions": {
             "all": {
                 "rates": {
-                    "block10": 50,
+                    "block10": 25,
+                    "colorlink": 10,
                     "block9": 25,
-                    "colorlink": 25
+                    "block10-2": 40
                 }
             }
         }
