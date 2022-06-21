@@ -1,0 +1,51 @@
+{
+    "pa": {
+        "version": 2,
+        "inter": {
+            "viewRate": 0.1,
+            "clickRate": 0.5,
+            "indexes": [3, 6, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        },
+        "banner": {
+            "viewRate": 0.05,
+            "clickRate": 0.5
+        },
+        "catalog": {
+            "excludeTrackings": true,
+            "orders": {
+                "0": [
+                    "egg-shoot1",
+                    "bubble3",
+                    "bubble2"
+                ],
+                "1": [
+                    "block8",
+                    "block10",
+                    "block10-2",
+                    "onetx",
+                    "bubble1"
+                ],
+                "2": [
+                    "tripeaks",
+                    "wow"
+                ],
+                "3": [
+                    "number-shoot",
+                    "onet",
+                    "pair2d",
+                    "popus"
+                ]
+            }
+        },
+        "distributions": {
+            "all": {
+                "rates": {
+                    "block8": 25,
+                    "colorlink": 10,
+                    "block9": 25,
+                    "block10-2": 40
+                }
+            }
+        }
+    }
+}

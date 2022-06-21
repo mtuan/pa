@@ -12,6 +12,10 @@
         },
         "block8": {
             "id": "3556676234461894",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/block88/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
+            "playY": -300,
             "settings": "block8.v1.json"
         },
         "block10": {
@@ -19,7 +23,8 @@
             "banner": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/banner.jpg",
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
-            "playY": -468
+            "playY": -468,
+            "settings": "block10.v1.json"
         },
         "block9": {
             "id": "914791739354749",
