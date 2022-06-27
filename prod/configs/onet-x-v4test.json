@@ -1,5 +1,5 @@
 {
-  "version": 44,
+  "version": 45,
   "id": "onet-x",
   "templates": {
    "egg-shoot": {
@@ -147,9 +147,36 @@
           "y": -300
         }
       }
+    },
+	"quizz-duel": {
+       "id": "1008636593363150",
+      "name": "Quizz Duel",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+	
+	"onet": {
+       "id": "1043181865796678",
+      "name": "Onet Connect",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/onetanimal/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/onetanimal/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/onetanimal/vec_screen.png",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/onetanimal/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
     }
-	
-	
 	
 	
 
@@ -169,9 +196,9 @@
   "sets": {
     "test":{
 	  "egg-shoot" : 50,
-	  "paper-fold" : 10,
 	  "dynomite-x2" : 10,
-	  "solitaire": 30
+	  "quizz-duel" : 30,
+	  "onet": 10
     },
 	  "default": {
 		   "egg-shoot" : 50,
@@ -182,7 +209,8 @@
   },
   "rules": {
 	   "test": {
-      "user": ["32498486217356350", "25127907121088680", "43836224383173350", "60799390520781800"]
+      "user": ["3249848621735635", "2512790712108868", "4383622438317335", "6079939052078180"],
+	   "user2": []
     }
   }
 }
