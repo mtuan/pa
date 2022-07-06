@@ -1,0 +1,180 @@
+{
+  "version": 15,
+  "id": "ninja-hit",
+  "templates": {
+     "egg-shoot": {
+      "id": "2492644277420233",
+      "name": "Egg Shoot",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/image/icon200square.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/image/banner-egg.png",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/image/screenshoot.png",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/image/button_small.png",
+          "x": 0,
+          "y": -250
+        }
+      }
+    },
+    
+    "shoot-bubbles": {
+      "id": "227788504726017",
+      "name": "Shoot Bubbles",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/icon200.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/splash-screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/bubbleshoot/Play-now.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+    "onet-x": {
+      "id": "220801932630391",
+      "name": "OnetX Connect Animals",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/onetx/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/onetx/banner.png",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/onetx/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/onetx/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+    "pair-matching": {
+      "id": "190367968913670",
+      "name": "Pair Matching",
+        "icon": "https://d2o6025edec3m1.cloudfront.net/pair-matching/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/pair-matching/banner.png",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/pair-matching/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/pair-matching/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+     "jumper": {
+      "id": "335736217697217",
+      "name": "Witch Jump",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/witch-jump/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/witch-jump/banner.png",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/witch-jump/vec_screen.png",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/witch-jump/button.png",
+          "x": 0,
+          "y": -360
+        }
+      }
+    },
+	 "bubble2": {
+      "id": "562551901626528",
+      "name": "Bouncing Balls",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/icon.png",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/button.png",
+          "x": 0,
+          "y": -360
+        }
+      }
+    }
+	,
+	 "bubble3": {
+      "id": "3203372379949232",
+      "name": "Shoot Bubbles 2 Legend",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/bubble3/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/bubble3/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/bubble3/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/bubble3/button.png",
+          "x": 0,
+          "y": -360
+        }
+      }
+    },
+	 "bubble4": {
+      "id": "1431412473973408",
+      "name": "Shoot Bubbles Pop",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/bubble4/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/bubble4/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/bubble4/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/bubble4/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+	 "block10Mania": {
+      "id": "7344712912268397",
+      "name": "Block Puzzle Mania",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/BlockMania/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/BlockMania/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/BlockMania/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/BlockMania/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    },
+	 "quizzDuel": {
+      "id": "1008636593363150",
+      "name": "Quiz Duel!",
+      "icon": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/icon.jpg",
+      "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
+      "inter": {
+        "image": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/vec_screen.jpg",
+        "play": {
+          "image": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/button.png",
+          "x": 0,
+          "y": -300
+        }
+      }
+    }
+	
+	
+	
+    
+  },
+  "configs": {
+    "default": {
+      "no-inter": false,
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [2, 7, 12, 16, 20],
+
+      "no-banner": false,
+      "banner-show": 0.1,
+      "banner-click": 0.5
+    },
+    "test": {
+      "inter-show": 0.1,
+      "inter-click": 0.5,
+      "inter-index": [1,2, 3, 5, 7]
+    }
+  },
+  "sets": {
+	"default": {
+		"bubble2":20,
+		"bubble3":20,
+		"bubble4":20,
+		"block10Mania": 20,
+		"quizzDuel": 20
+      
+    }
+	
+  }
+}
