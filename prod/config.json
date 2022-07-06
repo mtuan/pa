@@ -17,7 +17,7 @@
   },
   "ninja-hit-test": {
     "controller": "controllers/v2",
-    "config": "configs/ninja-hit-v5.json"
+    "config": "configs/ninja-hit-test.json"
   },
    "onet-x-v2": {
     "controller": "controllers/v2",
