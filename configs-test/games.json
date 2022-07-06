@@ -145,6 +145,13 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/BlockMania/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/BlockMania/button.png",
             "playY": -310
+        },
+        "bubble4": {
+            "id": "562551901626528",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/button.png",
+            "playY": -275
         }
     }
 }
