@@ -167,14 +167,7 @@
     }
   },
   "sets": {
-    "default": {
-	  "egg-shoot":80,
-      "shoot-bubbles": 5,
-      "onet-x": 5,
-      "pair-matching": 5,
-	  "jumper": 5
-    },
-	"test": {
+	"default": {
 		"bubble2":20,
 		"bubble3":20,
 		"bubble4":20,
