@@ -20,7 +20,7 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
             "playY": -468,
-            "settings": "block10.v1.json"
+            "settings": "block10.v3.json"
         },
         "block9": {
             "id": "914791739354749",
