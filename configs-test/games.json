@@ -162,7 +162,7 @@
             "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/button.png",
-            "playY": -275
+            "playY": -300
         }
     }
 }
