@@ -1,10 +1,10 @@
 {
     "pa": {
-        "version": 1,
+        "version": 4,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
-            "indexes": [6, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            "indexes": [3, 6, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100]
         },
         "banner": {
             "viewRate": 0.05,
@@ -14,17 +14,15 @@
             "excludeTrackings": true,
             "orders": {
                 "0": [
-                    "egg-shoot1",
                     "bubble3",
                     "bubble2",
                     "bubble4"
                 ],
                 "1": [
-                    "block8",
-                    "block10",
-                    "block10-2",
+                    "egg-shoot1",
                     "onetx",
-                    "bubble1"
+                    "bubble1",
+                    "block10-2"
                 ],
                 "2": [
                     "tripeaks",
@@ -33,6 +31,8 @@
                 "3": [
                     "number-shoot",
                     "onet",
+                    "block8",
+                    "block10",
                     "pair2d",
                     "popus"
                 ]
@@ -41,9 +41,9 @@
         "distributions": {
             "all": {
                 "rates": {
+                    "bubble3": 20,
                     "bubble4": 20,
-                    "block8": 20,
-                    "block9": 20,
+                    "number-shoot": 20,
                     "block10-2": 20,
                     "quiz-duel": 20
                 }

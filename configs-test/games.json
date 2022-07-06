@@ -12,11 +12,7 @@
         },
         "block8": {
             "id": "3556676234461894",
-            "banner": "https://d2o6025edec3m1.cloudfront.net/block88/banner.jpg",
-            "screenshot": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
-            "play": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
-            "playY": -300,
-            "settings": "block8.v1.json"
+            "settings": "block8.v3.json"
         },
         "block10": {
             "id": "1564585660390128",
@@ -61,7 +57,7 @@
         },
         "emoji": {
             "id": "1758443634509607",
-            "settings": "emoji.v1.json"
+            "settings": "emoji.v4.json"
         },
         "alien": {
             "id": "545660589189320"
@@ -80,7 +76,7 @@
         },
         "ninja": {
             "id": "634974810429385",
-            "settings": "ninja.v1.json"
+            "settings": "ninja.v3.json"
         },
         "number-shoot": {
             "id": "134374228549110"
