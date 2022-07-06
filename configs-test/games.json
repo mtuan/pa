@@ -156,6 +156,13 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/button.png",
             "playY": -275
+        },
+        "quiz-duel": {
+            "id": "1008636593363150",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/button.png",
+            "playY": -275
         }
     }
 }
