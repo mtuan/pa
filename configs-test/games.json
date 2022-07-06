@@ -12,6 +12,10 @@
         },
         "block8": {
             "id": "3556676234461894",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/block88/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
+            "playY": -468,
             "settings": "block8.v3.json"
         },
         "block10": {
