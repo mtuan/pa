@@ -83,7 +83,11 @@
             "settings": "ninja.v3.json"
         },
         "number-shoot": {
-            "id": "134374228549110"
+            "id": "134374228549110",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/numbershoot/banner.png",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/numbershoot/vec_screen.png",
+            "play": "https://d2o6025edec3m1.cloudfront.net/numbershoot/button.png",
+            "playY": -275
         },
         "pair2d": {
             "id": "190367968913670"
