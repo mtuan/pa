@@ -152,9 +152,9 @@
         },
         "bubble4": {
             "id": "562551901626528",
-            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/banner.jpg",
-            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/vec_screen.jpg",
-            "play": "https://d2o6025edec3m1.cloudfront.net/bubble2-ball/button.png",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble4/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble4/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubble4/button.png",
             "playY": -275
         },
         "quiz-duel": {
