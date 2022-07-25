@@ -1,6 +1,6 @@
 {
     "pa": {
-        "version": 3,
+        "version": 4,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
@@ -41,10 +41,10 @@
         "distributions": {
             "all": {
                 "rates": {
-                   "bubble2": 20,
-                   "bubble3": 20,
-                   "bubble4": 20,
+                   "bubble3": 10,
+                   "bubble4": 10,
                    "block10-2": 20,
+                   "tripeaks": 40,
                    "quiz-duel": 20
                 }
             }

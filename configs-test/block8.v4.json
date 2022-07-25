@@ -14,15 +14,17 @@
             "excludeTrackings": true,
             "orders": {
                 "0": [
+                    "egg-shoot1",
                     "bubble3",
                     "bubble2",
                     "bubble4"
                 ],
                 "1": [
-                    "egg-shoot1",
+                    "block8",
+                    "block10",
+                    "block10-2",
                     "onetx",
-                    "bubble1",
-                    "block10-2"
+                    "bubble1"
                 ],
                 "2": [
                     "tripeaks",
@@ -31,8 +33,6 @@
                 "3": [
                     "number-shoot",
                     "onet",
-                    "block8",
-                    "block10",
                     "pair2d",
                     "popus"
                 ]
@@ -41,10 +41,10 @@
         "distributions": {
             "all": {
                 "rates": {
-                    "bubble3": 20,
-                    "bubble4": 20,
-                    "number-shoot": 20,
+                    "block9": 10,
+                    "block10": 10,
                     "block10-2": 20,
+                    "tripeaks": 40,
                     "quiz-duel": 20
                 }
             }
