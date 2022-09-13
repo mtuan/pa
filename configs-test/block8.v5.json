@@ -1,0 +1,25 @@
+{
+    "pa": {
+        "version": 5,
+        "inter": {
+            "viewRate": 0.1,
+            "clickRate": 0.5,
+            "indexes": [6, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        },
+        "banner": {
+            "viewRate": 0.05,
+            "clickRate": 0.5
+        },
+        "distributions": {
+            "all": {
+                "rates": {
+                    "egg-shoot3": 20,
+                    "bubble5": 20,
+                    "number2": 20,
+                    "block10-2": 20,
+                    "tripeaks": 20
+                }
+            }
+        }
+    }
+}

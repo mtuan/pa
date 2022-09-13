@@ -165,6 +165,20 @@
             "play": "https://d2o6025edec3m1.cloudfront.net/bubble4/button.png",
             "playY": -275
         },
+        "bubble5": {
+            "id": "1214736605928366",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble5/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble5/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubble5/button.png",
+            "playY": -275
+        },
+        "egg-shoot3": {
+            "id": "381831230747719",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/egg3/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/egg3/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/egg3/button.png",
+            "playY": -275
+        },
         "quiz-duel": {
             "id": "1008636593363150",
             "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
