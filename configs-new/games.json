@@ -16,7 +16,7 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
             "playY": -468,
-            "settings": "block8.v4.json"
+            "settings": "block8.v5.json"
         },
         "block10": {
             "id": "1564585660390128",
@@ -24,7 +24,7 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
             "playY": -468,
-            "settings": "block10.v4.json"
+            "settings": "block10.v5.json"
         },
         "block9": {
             "id": "914791739354749",
@@ -61,7 +61,7 @@
         },
         "emoji": {
             "id": "1758443634509607",
-            "settings": "emoji.v5.json"
+            "settings": "emoji.v6.json"
         },
         "alien": {
             "id": "545660589189320"
@@ -80,7 +80,7 @@
         },
         "ninja": {
             "id": "634974810429385",
-            "settings": "ninja.v4.json"
+            "settings": "ninja.v5.json"
         },
         "number-shoot": {
             "id": "134374228549110",
@@ -164,6 +164,27 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble4/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/bubble4/button.png",
             "playY": -275
+        },
+        "bubble5": {
+            "id": "1214736605928366",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/bubble5/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/bubble5/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/bubble5/button.png",
+            "playY": -275
+        },
+        "egg-shoot3": {
+            "id": "381831230747719",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/egg3/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/egg3/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/egg3/button.png",
+            "playY": -275
+        },
+        "number2": {
+            "id": "284404767166823",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/Number2/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/Number2/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/Number2/button.png",
+            "playY": -50
         },
         "quiz-duel": {
             "id": "1008636593363150",
