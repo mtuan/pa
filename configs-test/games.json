@@ -179,6 +179,13 @@
             "play": "https://d2o6025edec3m1.cloudfront.net/egg3/button.png",
             "playY": -275
         },
+        "number2": {
+            "id": "284404767166823",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/Number2/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/Number2/vec_screen.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/Number2/button.png",
+            "playY": -50
+        },
         "quiz-duel": {
             "id": "1008636593363150",
             "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
