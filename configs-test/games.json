@@ -16,7 +16,7 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/block88/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/block88/button.png",
             "playY": -468,
-            "settings": "block8.v5.json"
+            "settings": "block8.v6.json"
         },
         "block10": {
             "id": "1564585660390128",
@@ -24,7 +24,7 @@
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/blockpuzzle/button.png",
             "playY": -468,
-            "settings": "block10.v5.json"
+            "settings": "block10.v6.json"
         },
         "block9": {
             "id": "914791739354749",
@@ -61,7 +61,7 @@
         },
         "emoji": {
             "id": "1758443634509607",
-            "settings": "emoji.v6.json"
+            "settings": "emoji.v7.json"
         },
         "alien": {
             "id": "545660589189320"
@@ -80,7 +80,7 @@
         },
         "ninja": {
             "id": "634974810429385",
-            "settings": "ninja.v5.json"
+            "settings": "ninja.v6.json"
         },
         "number-shoot": {
             "id": "134374228549110",
@@ -191,6 +191,13 @@
             "banner": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/banner.jpg",
             "screenshot": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/vec_screen.jpg",
             "play": "https://d2o6025edec3m1.cloudfront.net/QuizzDuel/button.png",
+            "playY": -300
+        },
+        "block-lv": {
+            "id": "1551433381957796",
+            "banner": "https://d2o6025edec3m1.cloudfront.net/BlockMission/banner.jpg",
+            "screenshot": "https://d2o6025edec3m1.cloudfront.net/BlockMission/portrait.jpg",
+            "play": "https://d2o6025edec3m1.cloudfront.net/BlockMission/button.png",
             "playY": -300
         }
     }

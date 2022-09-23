@@ -1,6 +1,6 @@
 {
     "pa": {
-        "version": 5,
+        "version": 7,
         "inter": {
             "viewRate": 0.1,
             "clickRate": 0.5,
@@ -17,7 +17,7 @@
                     "bubble5": 20,
                     "number2": 20,
                     "block10-2": 20,
-                    "tripeaks": 20
+                    "block-lv": 20
                 }
             }
         }
