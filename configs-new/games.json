@@ -1,2 +1,9 @@
 {
+    "assets": {
+        "gameUrl": "https://d2o6025edec3m1.cloudfront.net/push-apps/assets/games",
+        "iconUrl": "https://d2o6025edec3m1.cloudfront.net/push-apps/assets/catalogs"
+    },
+    "games": {
+
+    }
 }
